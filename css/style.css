@@ -19,7 +19,6 @@ body {
     height: 100%;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
 }
 
 h1,
@@ -376,7 +375,7 @@ ol {
 .filter-form {
     border-radius: 4px;
     background: #fff;
-    height: 115px;
+    height: 100%;
     -webkit-box-shadow: 2px 15px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 2px 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -448,7 +447,6 @@ ol {
 .search-type {
     border-right: 1px solid #F3F3F3;
     float: left;
-    padding: 20px 27px 29px;
     width: 43%;
 }
 
@@ -942,73 +940,81 @@ html .ui-button.ui-state-disabled:active {
     margin-bottom: 28px;
 }
 
-    .property-description h4,
-    .property-features h4,
-    .location-map h4 {
-        color: #30304e;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 18px;
-    }
+#map {
+    margin-bottom: 28px;
+}
 
-    .property-description p,
-    .property-features p,
-    .location-map p {
-        color: #6f6f8a;
-        font-size: 14px;
-        font-weight: 300;
-        margin: 0;
-    }
+.property-description h4,
+.property-features h4,
+.location-map h4 {
+    color: #30304e;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
 
-    .property-description iframe,
-    .property-features iframe,
-    .location-map iframe {
+.property-description p,
+.property-features p,
+.location-map p {
+    color: #6f6f8a;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.property-description iframe,
+.property-features iframe,
+.location-map iframe {
+    width: 100%;
+    height: 355px;
+    border: 0;
+}
+
+.property-features h4 {
+    margin-bottom: 13px;
+}
+
+.property-features .property-table {
+    margin-left: -25px;
+    margin-right: -20px;
+    overflow-y: auto;
+}
+
+    .property-features .property-table table {
         width: 100%;
-        height: 355px;
-        border: 0;
+        min-width: 350px;
     }
 
-    .property-features h4 {
-        margin-bottom: 13px;
-    }
-
-    .property-features .property-table {
-        margin-left: -25px;
-        margin-right: -20px;
-        overflow-y: auto;
-    }
-
-        .property-features .property-table table {
-            width: 100%;
-            min-width: 350px;
+        .property-features .property-table table tr:nth-child(even) {
+            background: #F8F8F9;
         }
 
-            .property-features .property-table table tr:nth-child(even) {
-                background: #F8F8F9;
-            }
+        .property-features .property-table table tr td {
+            padding-top: 8px;
+            padding-bottom: 9px;
+            padding-left: 25px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #30304e;
+            width: 75%;
+        }
 
-            .property-features .property-table table tr td {
-                padding-top: 8px;
-                padding-bottom: 9px;
-                padding-left: 25px;
-                font-size: 15px;
-                font-weight: 400;
-                color: #30304e;
-                width: 120px;
+            .property-features .property-table table tr td img {
+                margin-right: 13px;
+                height: 16px;
             }
-
-                .property-features .property-table table tr td img {
-                    margin-right: 13px;
-                    height: 16px;
-                }
 
 .location-map {
     margin-bottom: 0;
 }
 
-    .location-map h4 {
-        margin-bottom: 24px;
-    }
+#map {
+    margin-bottom: 0;
+}
+
+.location-map h4 {
+    margin-bottom: 24px;
+}
 
 .contact-service {
     border-radius: 4px;
@@ -1417,6 +1423,13 @@ html .ui-button.ui-state-disabled:active {
         left: -17px;
         margin-left: -50px;
     }
+
+.car-img {
+    border-radius: 4px 4px 0 0;
+    height: 600px;
+    position: relative;
+    width: 100%;
+}
 
 .room-items {
     border-radius: 4px;

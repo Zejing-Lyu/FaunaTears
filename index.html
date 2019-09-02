@@ -7,7 +7,7 @@
     <meta name="keywords" content="Homes, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homes Page | Template</title>
+    <title>Wild Cry | Search</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
@@ -95,8 +95,18 @@
 
                         <div class="onKey">
                             <p style="        text-align: center;
-        font-size: 20px;">Search for an Endangered Species</p>
-                            <input class="type" id="search" type="text" onkeyup="Search();" placeholder="" title="Type in a name">
+        font-size: 20px;
+        color: #000000;">Search for an Endangered Species</p>
+
+                            <input class="form-control form-control-lg" type="text" placeholder="&#x1F50D;  Search" onkeyup="Search();" id="search">
+                            <input class="type" id="search" type="text" placeholder="" title="Type in a name" style="        visibility: hidden;
+        display: none;">
+                            <div id="error" style="        color: red;
+        padding-top: 2%;
+        visibility: hidden;
+    ">
+                                An invalid character was found.
+                            </div>
                         </div>
 
 
@@ -114,6 +124,7 @@
     <section class="hotel-rooms spad">
         <div class="container">
             <div class="row" id="species">
+
                 <!--div class="col-lg-4 col-md-6">
                     <div class="room-items">
                         <div class="room-img set-bg" data-setbg="img/rooms/1.jpg">
@@ -140,23 +151,43 @@
     <footer class="footer-section p-40">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center sp-60">
+                <div class="col-lg-12 text-center">
                     <a href="./home.html">
                         <img src="logo7.png" alt="" style="        height: 60px;">
-
                     </a>
                 </div>
             </div>
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./home.html" style="color:white;">Home</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./about.html" style="color:white;">About Us</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#" onclick="AUS();" style="color:white;">Search</a>
+                    </h6>
+                </div>
 
-            <div class="row p-20">
-                <div class="col-lg-12 text-center">
-                    <div class="copyright" style="color:white; opacity:0.6;">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Wild Cry 2019 </a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
 
-                    </div>
+        </div>
+
+        <div class="row p-20">
+            <div class="col-lg-12 text-center">
+                <div class="copyright" style="        color: white;
+        opacity: 0.6;">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | Wild Cry 2019
+                    </a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
             </div>
         </div>
@@ -164,6 +195,13 @@
     <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script type="text/javascript">
+    document.getElementById("search")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("id_of_button").click();
+    }
+});
     function AUS(){
             var value = "Australia";
             window.location.href = "index.html?category="+value;
@@ -195,6 +233,7 @@ function myFunction() {
                         var div6 = document.createElement("div");
                         var div7 = document.createElement("div");
                         var h5 = document.createElement("h5");
+                        var p = document.createElement("p");
 
                         div1.setAttribute("class", "col-lg-4 col-md-6");
                         div1.setAttribute("id", data[i]["Vernacular name - original"]);
@@ -207,9 +246,9 @@ function myFunction() {
 
                         div3.setAttribute("class", "room-img set-bg");
 
-                        var name = data[i]["Vernacular name - original"].replace("'", "_");
+                        var name = data[i]["Vernacular name - original"].replace('\'', '_');
 
-                        var link = "url('images/" + name + "/1.jpg')";
+                        var link = "url('images/" + name + ".jpg')";
                         div3.style.content = link;
 
                         a1.setAttribute("class", "room-content");
@@ -218,13 +257,17 @@ function myFunction() {
 
                         div6.setAttribute("class", "room-details");
 
-                        div7.setAttribute("class", "rroom-title");
+                        div7.setAttribute("class", "room-title");
 
-                        h5.innerHTML = "# " + data[i]["No"] + " " + data[i]["Vernacular name - original"];
+                        h5.innerHTML = data[i]["Vernacular name - original"];
                         h5.style.textAlign = "center";
+
+                        p.innerHTML = "Ranking: # " + data[i]["No"];
+                        p.style.textAlign = "center";
 
 
                         div7.appendChild(h5);
+                        div7.appendChild(p);
                         div6.appendChild(div7);
                         div5.appendChild(div6);
                         div2.appendChild(div3);
@@ -260,7 +303,7 @@ function myFunction() {
                                 var div6 = document.createElement("div");
                                 var div7 = document.createElement("div");
                                 var h5 = document.createElement("h5");
-
+                                var p = document.createElement("p");
                                 div1.setAttribute("class", "col-lg-4 col-md-6");
                                 div1.setAttribute("id", data[i]["Vernacular name - original"]);
                                 div1.onclick = function() {
@@ -271,10 +314,10 @@ function myFunction() {
 
                                 div3.setAttribute("class", "room-img set-bg");
 
-                                var name = data[i]["Vernacular name - original"].replace("'", "_");
+                                var name = data[i]["Vernacular name - original"].replace('\'', '_');
 
-                                var link = "url('images/" + name + "/1.jpg')";
-                                div3.style.content = link;//"url('images/Slender-tailed dunnart/1.jpg')";
+                                var link = "url('images/" + name + ".jpg')";
+                                div3.style.content = link;
 
                                 a1.setAttribute("class", "room-content");
 
@@ -282,13 +325,17 @@ function myFunction() {
 
                                 div6.setAttribute("class", "room-details");
 
-                                div7.setAttribute("class", "rroom-title");
+                                div7.setAttribute("class", "room-title");
 
-                                h5.innerHTML = "# " + data[i]["No"] + " " + data[i]["Vernacular name - original"];
+                                h5.innerHTML = data[i]["Vernacular name - original"];
                                 h5.style.textAlign = "center";
+
+                                p.innerHTML = "Ranking: # " + data[i]["No"];
+                                p.style.textAlign = "center";
 
 
                                 div7.appendChild(h5);
+                                div7.appendChild(p);
                                 div6.appendChild(div7);
                                 div5.appendChild(div6);
                                 div2.appendChild(div3);
@@ -325,7 +372,7 @@ function myFunction() {
                                     var div6 = document.createElement("div");
                                     var div7 = document.createElement("div");
                                     var h5 = document.createElement("h5");
-
+                                    var p = document.createElement("p");
                                     div1.setAttribute("class", "col-lg-4 col-md-6");
                                     div1.setAttribute("id", data[i]["Vernacular name - original"]);
                                     div1.onclick = function() {
@@ -336,10 +383,10 @@ function myFunction() {
 
                                     div3.setAttribute("class", "room-img set-bg");
 
-                                    var name = data[i]["Vernacular name - original"].replace("'", "_");
+                                    var name = data[i]["Vernacular name - original"].replace('\'', '_');
 
-                                    var link = "url('images/" + name + "/1.jpg')";
-                                    div3.style.content = link;//"url('images/Slender-tailed dunnart/1.jpg')";
+                                    var link = "url('images/" + name + ".jpg')";
+                                    div3.style.content = link;
 
                                     a1.setAttribute("class", "room-content");
 
@@ -347,13 +394,17 @@ function myFunction() {
 
                                     div6.setAttribute("class", "room-details");
 
-                                    div7.setAttribute("class", "rroom-title");
+                                    div7.setAttribute("class", "room-title");
 
-                                    h5.innerHTML = "#" + data[i]["No"] + " " + data[i]["Vernacular name - original"];
+                                    h5.innerHTML = data[i]["Vernacular name - original"];
                                     h5.style.textAlign = "center";
+
+                                    p.innerHTML = "Ranking: # " + data[i]["No"];
+                                    p.style.textAlign = "center";
 
 
                                     div7.appendChild(h5);
+                                    div7.appendChild(p);
                                     div6.appendChild(div7);
                                     div5.appendChild(div6);
                                     div2.appendChild(div3);
@@ -367,6 +418,7 @@ function myFunction() {
 
                         }
                     }
+
                 }
             }
 
@@ -384,125 +436,85 @@ function myFunction() {
             }
             var input = document.getElementById("search");
             var filter = input.value.toUpperCase();
-
+            flag = 0;
             if (filter != "") {
-                var dict = {};
-                if (category == "Australia") {
-                    for (i = 0; i < data.length; i++) {
-                        var txtValue = data[i]["Vernacular name - original"];
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            if (data[i]["Vernacular name - original"] in dict){
-                                dict[data[i]["Vernacular name - original"]] += 1;
-                            }
-                            else {
-                                var div1 = document.createElement("div");
-                                var div2 = document.createElement("div");
-                                var div3 = document.createElement("div");
-                                var a1 = document.createElement("a");
-                                var div4 = document.createElement("div");
-                                var div5 = document.createElement("div");
-                                var div6 = document.createElement("div");
-                                var div7 = document.createElement("div");
-                                var h5 = document.createElement("h5");
-                                div1.setAttribute("class", "col-lg-4 col-md-6");
-                                div1.setAttribute("id", data[i]["Vernacular name - original"]);
-                                div1.onclick = function() {
-                                    var value = this.id;
-                                    window.location.href = "info.html?species="+value;
-                                };
-                                div2.setAttribute("class", "room-items");
-                                div3.setAttribute("class", "room-img set-bg");
-                                var name = data[i]["Vernacular name - original"].replace("'", "_");
-                                var link = "url('images/" + name + "/1.jpg')";
-                                div3.style.content = link;
-                                a1.setAttribute("class", "room-content");
-
-                                div5.setAttribute("class", "room-text");
-
-                                div6.setAttribute("class", "room-details");
-
-                                div7.setAttribute("class", "rroom-title");
-
-                                h5.innerHTML = "#" + data[i]["No"] + " " + data[i]["Vernacular name - original"];
-                                h5.style.textAlign = "center";
-
-                                div7.appendChild(h5);
-                                div6.appendChild(div7);
-                                div5.appendChild(div6);
-                                div2.appendChild(div3);
-                                div2.appendChild(div5);
-                                div1.appendChild(div2);
-                                row.appendChild(div1);
-
-                                dict[data[i]["Vernacular name - original"]] = 1;
-                            }
-
-                        }
-                    }
-
+                if (!filter.match(/^[A-Za-z\'\-]+$/)) {
+                    document.getElementById("error").innerHTML = "An invalid character was found.";
+                    document.getElementById("error").style.color = "red";
+                    document.getElementById("error").style.visibility = "visible";
                 }
                 else {
-                    if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Northern Territory" || category == "Queensland" || category == "South Australia" || category == "Tasmania" || category == "Victoria" || category == "Western Australia") {
+                    document.getElementById("error").style.visibility = "hidden";
+                        var dict = {};
+                    if (category == "Australia") {
                         for (i = 0; i < data.length; i++) {
-                            if (data[i]["State - parsed"] == category) {
-                                var txtValue = data[i]["Vernacular name - original"];
-                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                    if (data[i]["Vernacular name - original"] in dict){
-                                        dict[data[i]["Vernacular name - original"]] += 1;
-                                    }
-                                    else {
-                                        var div1 = document.createElement("div");
-                                        var div2 = document.createElement("div");
-                                        var div3 = document.createElement("div");
-                                        var a1 = document.createElement("a");
-                                        var div4 = document.createElement("div");
-                                        var div5 = document.createElement("div");
-                                        var div6 = document.createElement("div");
-                                        var div7 = document.createElement("div");
-                                        var h5 = document.createElement("h5");
-                                        div1.setAttribute("class", "col-lg-4 col-md-6");
-                                        div1.setAttribute("id", data[i]["Vernacular name - original"]);
-                                        div1.onclick = function() {
-                                            var value = this.id;
-                                            window.location.href = "info.html?species="+value;
-                                        };
-                                        div2.setAttribute("class", "room-items");
-                                        div3.setAttribute("class", "room-img set-bg");
-                                        var name = data[i]["Vernacular name - original"].replace("'", "_");
-                                        var link = "url('images/" + name + "/1.jpg')";
-                                        div3.style.content = link;
-                                        a1.setAttribute("class", "room-content");
-
-                                        div5.setAttribute("class", "room-text");
-
-                                        div6.setAttribute("class", "room-details");
-
-                                        div7.setAttribute("class", "rroom-title");
-
-                                        h5.innerHTML = "#" + data[i]["No"] + " " + data[i]["Vernacular name - original"];
-                                        h5.style.textAlign = "center";
-
-                                        div7.appendChild(h5);
-                                        div6.appendChild(div7);
-                                        div5.appendChild(div6);
-                                        div2.appendChild(div3);
-                                        div2.appendChild(div5);
-                                        div1.appendChild(div2);
-                                        row.appendChild(div1);
-
-                                        dict[data[i]["Vernacular name - original"]] = 1;
-                                    }
-
+                            var txtValue = data[i]["Vernacular name - original"];
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                flag = 1;
+                                if (data[i]["Vernacular name - original"] in dict){
+                                    dict[data[i]["Vernacular name - original"]] += 1;
                                 }
+                                else {
+                                    var div1 = document.createElement("div");
+                                    var div2 = document.createElement("div");
+                                    var div3 = document.createElement("div");
+                                    var a1 = document.createElement("a");
+                                    var div4 = document.createElement("div");
+                                    var div5 = document.createElement("div");
+                                    var div6 = document.createElement("div");
+                                    var div7 = document.createElement("div");
+                                    var h5 = document.createElement("h5");
+                                    var p = document.createElement("p");
+                                    div1.setAttribute("class", "col-lg-4 col-md-6");
+                                    div1.setAttribute("id", data[i]["Vernacular name - original"]);
+                                    div1.onclick = function() {
+                                        var value = this.id;
+                                        window.location.href = "info.html?species="+value;
+                                    };
+                                    div2.setAttribute("class", "room-items");
+                                    div3.setAttribute("class", "room-img set-bg");
+                                    var name = data[i]["Vernacular name - original"].replace('\'', '_');
+                                    var link = "url('images/" + name + ".jpg')";
+                                    div3.style.content = link;
+                                    a1.setAttribute("class", "room-content");
+
+                                    div5.setAttribute("class", "room-text");
+
+                                    div6.setAttribute("class", "room-details");
+
+                                    div7.setAttribute("class", "room-title");
+
+                                    h5.innerHTML = data[i]["Vernacular name - original"];
+                                    h5.style.textAlign = "center";
+
+                                    p.innerHTML = "Ranking: # " + data[i]["No"];
+                                    p.style.textAlign = "center";
+
+
+                                    div7.appendChild(h5);
+                                    div7.appendChild(p);
+                                    div6.appendChild(div7);
+                                    div5.appendChild(div6);
+                                    div2.appendChild(div3);
+                                    div2.appendChild(div5);
+                                    div1.appendChild(div2);
+                                    row.appendChild(div1);
+
+                                    dict[data[i]["Vernacular name - original"]] = 1;
+                                }
+
                             }
+
                         }
+
                     }
                     else {
-                        if (category == "Amphibia" || category == "Mammalia" || category == "Reptilia") {
+                        if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Northern Territory" || category == "Queensland" || category == "South Australia" || category == "Tasmania" || category == "Victoria" || category == "Western Australia") {
                             for (i = 0; i < data.length; i++) {
-                                if (data[i]["Class"] == category) {
+                                if (data[i]["State - parsed"] == category) {
                                     var txtValue = data[i]["Vernacular name - original"];
                                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        flag = 1;
                                         if (data[i]["Vernacular name - original"] in dict){
                                             dict[data[i]["Vernacular name - original"]] += 1;
                                         }
@@ -516,6 +528,7 @@ function myFunction() {
                                             var div6 = document.createElement("div");
                                             var div7 = document.createElement("div");
                                             var h5 = document.createElement("h5");
+                                            var p = document.createElement("p");
                                             div1.setAttribute("class", "col-lg-4 col-md-6");
                                             div1.setAttribute("id", data[i]["Vernacular name - original"]);
                                             div1.onclick = function() {
@@ -524,8 +537,8 @@ function myFunction() {
                                             };
                                             div2.setAttribute("class", "room-items");
                                             div3.setAttribute("class", "room-img set-bg");
-                                            var name = data[i]["Vernacular name - original"].replace("'", "_");
-                                            var link = "url('images/" + name + "/1.jpg')";
+                                            var name = data[i]["Vernacular name - original"].replace('\'', '_');
+                                            var link = "url('images/" + name + ".jpg')";
                                             div3.style.content = link;
                                             a1.setAttribute("class", "room-content");
 
@@ -533,12 +546,17 @@ function myFunction() {
 
                                             div6.setAttribute("class", "room-details");
 
-                                            div7.setAttribute("class", "rroom-title");
+                                            div7.setAttribute("class", "room-title");
 
-                                            h5.innerHTML = "#" + data[i]["No"] + " " + data[i]["Vernacular name - original"];
+                                            h5.innerHTML = data[i]["Vernacular name - original"];
                                             h5.style.textAlign = "center";
 
+                                            p.innerHTML = "Ranking: # " + data[i]["No"];
+                                            p.style.textAlign = "center";
+
+
                                             div7.appendChild(h5);
+                                            div7.appendChild(p);
                                             div6.appendChild(div7);
                                             div5.appendChild(div6);
                                             div2.appendChild(div3);
@@ -553,11 +571,83 @@ function myFunction() {
                                 }
                             }
                         }
+                        else {
+                            if (category == "Amphibia" || category == "Mammalia" || category == "Reptilia") {
+                                for (i = 0; i < data.length; i++) {
+                                    if (data[i]["Class"] == category) {
+                                        var txtValue = data[i]["Vernacular name - original"];
+                                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                            flag = 1;
+                                            if (data[i]["Vernacular name - original"] in dict){
+                                                dict[data[i]["Vernacular name - original"]] += 1;
+                                            }
+                                            else {
+                                                var div1 = document.createElement("div");
+                                                var div2 = document.createElement("div");
+                                                var div3 = document.createElement("div");
+                                                var a1 = document.createElement("a");
+                                                var div4 = document.createElement("div");
+                                                var div5 = document.createElement("div");
+                                                var div6 = document.createElement("div");
+                                                var div7 = document.createElement("div");
+                                                var h5 = document.createElement("h5");
+                                                var p = document.createElement("p");
+                                                div1.setAttribute("class", "col-lg-4 col-md-6");
+                                                div1.setAttribute("id", data[i]["Vernacular name - original"]);
+                                                div1.onclick = function() {
+                                                    var value = this.id;
+                                                    window.location.href = "info.html?species="+value;
+                                                };
+                                                div2.setAttribute("class", "room-items");
+                                                div3.setAttribute("class", "room-img set-bg");
+                                                var name = data[i]["Vernacular name - original"].replace('\'', '_');
+                                                var link = "url('images/" + name + ".jpg')";
+                                                div3.style.content = link;
+                                                a1.setAttribute("class", "room-content");
+
+                                                div5.setAttribute("class", "room-text");
+
+                                                div6.setAttribute("class", "room-details");
+
+                                                div7.setAttribute("class", "room-title");
+
+                                                h5.innerHTML = data[i]["Vernacular name - original"];
+                                                h5.style.textAlign = "center";
+
+                                                p.innerHTML = "Ranking: # " + data[i]["No"];
+                                                p.style.textAlign = "center";
+
+
+                                                div7.appendChild(h5);
+                                                div7.appendChild(p);
+                                                div6.appendChild(div7);
+                                                div5.appendChild(div6);
+                                                div2.appendChild(div3);
+                                                div2.appendChild(div5);
+                                                div1.appendChild(div2);
+                                                row.appendChild(div1);
+
+                                                dict[data[i]["Vernacular name - original"]] = 1;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (flag == 0){
+                        document.getElementById("error").innerHTML = "No results found.";
+                        document.getElementById("error").style.color = "black";
+                        document.getElementById("error").style.visibility = "visible";
+
                     }
                 }
+
             }
 
             else {
+                document.getElementById("error").style.visibility = "hidden";
                 myFunction();
             }
         }</script>
