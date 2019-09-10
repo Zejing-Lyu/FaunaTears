@@ -2,7 +2,7 @@
 
 echo "Fact";
 
-$mysqli = new mysqli("wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com","root","rakhulkarthick","wildcry");
+$mysqli = mysqli_connect("wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com","root","rakhulkarthick","wildcry");
 
 echo "Fact2";
 
