@@ -1,6 +1,6 @@
 <?php
 $mysqli = new mysqli("localhost","root","rakhul","wildcry");
-if($mysqli -> connect_error) {
+if ($mysqli->connect_error) {
   exit('Could not connect');
 }
 
