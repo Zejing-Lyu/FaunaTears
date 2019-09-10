@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost","root","rakhul","wildcry");
+$mysqli = new mysqli(localhost,"root","rakhul","wildcry");
 if($mysqli->connect_error) {
   exit('Could not connect');
 }
