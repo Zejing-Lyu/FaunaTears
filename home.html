@@ -136,6 +136,24 @@
         </a>
     </div>
     <!-- Hero Section End -->
+<!-- database connection -->
+<p id="demo">
+        <button type="button" onclick="loadDoc()">Read Todays Fact</button>
+      <script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "databasefact.php", true);
+  xhttp.send();
+}
+      </script>
+    </p>
+<!-- database connection end -->
+
     <!-- Hotel Room Section Begin -->
     <div class="container hero-text text-black">
         <h2>About Us</h2>
