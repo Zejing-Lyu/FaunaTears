@@ -1,4 +1,4 @@
-<?php
+<!--
 $servername = "wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com";
 $username = "root";
 $password = "rakhulkarthick";
@@ -23,4 +23,8 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+?>
+-->
+<?php
+echo "0 results";
 ?>
