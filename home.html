@@ -138,7 +138,7 @@
     <!-- Hero Section End -->
 <!-- database connection -->
 <p id="demo">
-        <button type="button" onclick="loadDoc()">Read Todays Fact</button>
+        <button type="button" onclick="loadDoc()">WildCry database</button>
       <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -147,7 +147,7 @@ function loadDoc() {
       document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "databasefact.php", true);
+  xhttp.open("GET", "database.php", true);
   xhttp.send();
 }
       </script>
