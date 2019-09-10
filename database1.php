@@ -1,26 +1,22 @@
 <?php
-
-echo "Fact";
-
-$mysqli = mysqli_connect("wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com","root","rakhulkarthick","wildcry");
-
-echo "Fact2";
-
+$mysqli = new mysqli("waste.cdylivsvnwen.us-east-2.rds.amazonaws.com","jeyganesh","jeyganesh","jeyganesh");
 if($mysqli->connect_error) {
   exit('Could not connect');
 }
 
-$sql = "SELECT name FROM tables";
+$sql = "Select fact_description from Fact";
 $stmt = $mysqli->prepare($sql);
 $stmt->bind_param("s", $_GET['q']);
 $stmt->execute();
 $stmt->store_result();
-$stmt->bind_result($name);
+$stmt->bind_result($fact_description);
 $stmt->fetch();
 $stmt->close();
 
 echo "Fact";
-echo "<h3>".$name."</h3>";
-
+echo "<h3>".$fact_description."</h3>";
 ?>
+
+
+
 
