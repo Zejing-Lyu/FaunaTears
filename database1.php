@@ -1,5 +1,6 @@
 <?php
 
+echo "Fact";
 $mysqli = new mysqli("wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com","root","rakhulkarthick","wildcry");
 if($mysqli->connect_error) {
   exit('Could not connect');
