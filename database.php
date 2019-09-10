@@ -1,18 +1,18 @@
 <?php
-$mysqli = new mysqli("wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com","root","rakhulkarthick","wildcry");
-if ($mysqli->connect_error) {
-  exit('Could not connect');
-}
-
-$sql = "Select name from tables";
-$stmt = $mysqli->prepare($sql);
-$stmt->bind_param("s", $_GET['q']);
-$stmt->execute();
-$stmt->store_result();
-$stmt->bind_result($name);
-$stmt->fetch();
-$stmt->close();
-
-echo "wildcry";
-echo "<h3>".$name."</h3>";
+function OpenCon()
+ {
+ $dbhost = "wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com";
+ $dbuser = "root";
+ $dbpass = "rakhulkarthick";
+ $db = "wildcry";
+ $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+ 
+ return $conn;
+ }
+ 
+function CloseCon($conn)
+ {
+ $conn -> close();
+ }
+   
 ?>
