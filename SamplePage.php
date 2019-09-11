@@ -1,18 +1,18 @@
-<?php include "../dbinfo.inc"; ?>
+
 <html>
 <body>
 <h1>Sample page</h1>
 <?php
 
   /* Connect to MySQL and select the database. */
-  $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
+  $connection = mysqli_connect('wildcry.c8vcpeuwbjfj.us-east-2.rds.amazonaws.com', 'root', 'rakhulkarthick');
 
   if (mysqli_connect_errno()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
-  $database = mysqli_select_db($connection, DB_DATABASE);
+  $database = mysqli_select_db($connection, 'wildcry');
 
   /* Ensure that the EMPLOYEES table exists. */
-  VerifyEmployeesTable($connection, DB_DATABASE);
+  VerifyEmployeesTable($connection, 'wildcry');
 
   /* If input fields are populated, add a row to the EMPLOYEES table. */
   $employee_name = htmlentities($_POST['NAME']);
