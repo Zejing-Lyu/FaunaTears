@@ -510,16 +510,38 @@ pre {
     overflow-y: scroll
 }
 
+.container2 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
 .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.container1 {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 10px;
 }
 
 @media (min-width:576px) {
     .container {
+        max-width: 540px
+    }
+
+    .container1 {
         max-width: 540px
     }
 }
@@ -528,16 +550,28 @@ pre {
     .container {
         max-width: 720px
     }
+
+    .container1 {
+        max-width: 720px
+    }
 }
 
 @media (min-width:992px) {
     .container {
         max-width: 960px
     }
+
+    .container1 {
+        max-width: 960px
+    }
 }
 
 @media (min-width:1200px) {
     .container {
+        max-width: 1140px
+    }
+
+    .container1 {
         max-width: 1140px
     }
 }
@@ -559,6 +593,16 @@ pre {
     margin-left: -15px;
 }
 
+.row-form {
+    border-radius: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 .no-gutters {
     margin-right: 0;
     margin-left: 0
@@ -573,7 +617,13 @@ pre {
     position: relative;
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px
+    padding-left: 15px;
+}
+
+.col-lg-12-form {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .col {
@@ -1244,6 +1294,12 @@ pre {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%
+    }
+
+    .col-lg-4-form {
+        -ms-flex: 0 0 33.32%;
+        flex: 0 0 33.32%;
+        max-width: 33.32%
     }
 
     .col-lg-5 {

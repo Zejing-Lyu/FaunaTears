@@ -31,245 +31,274 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
 
-
-
-    <style>
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-    <style>
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-        }
-    </style>
-
-    <style>
-        #map_9b7d76ad92c2435f8ef89790667a066b {
-            position: relative;
-            width: 100.0%;
-            height: 100.0%;
-            left: 0.0%;
-            top: 0.0%;
-        }
-    </style>
-
+    <!-- JS Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/canvasjs.js"></script>
+    <script src="js/data.js"></script>
 
 </head>
 
 <body onload="myFunction()">
-
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="container-fluid">
+            <!-- 1st Row Begin -->
             <div class="row">
+                <!-- 1st Column Begin -->
                 <div class="col-lg-12">
+                    <!-- Logo Begin -->
                     <div class="logo">
                         <a href="./home.html">
-                            <img src="logo7.png" alt="" style="        height: 60px;">
-
+                            <img src="logo7.png" alt="">
                         </a>
                     </div>
-                    <ul class="main-menu" style="        padding-top: 10px;">
-                        <li><a href="./home.html" style="        color: black;">Home</a></li>
-                        <li><a href="#" onclick="AUS();" style="        color: black;">Search</a></li>
-                        <li><a href="./about.html" style="        color: black;">About Us</a></li>
-
-
+                    <!-- Logo End -->
+                    <!-- Navigation Begin -->
+                    <ul class="main-menu">
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#">Search</a>
+                                <div class="dropdown-content">
+                                    <a class="secondary-menu" href="#" onclick="AUS();">Species</a>
+                                    <a class="secondary-menu" href="#" onclick="Threats();">Threats</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
                     </ul>
+                    <!-- Navigation End -->
+                    <!-- Mobile Menu Begin -->
                     <div id="mobile-menu-wrap"></div>
+                    <!-- Mobile Menu End -->
                 </div>
+                <!-- 1st Column End -->
             </div>
+            <!-- 1st Row End -->
         </div>
     </header>
     <!-- Header Section End -->
-    <!-- Hero Section Begin -->
-    <section class="hero-section home-page set-bg" data-setbg="img/bg.jpg" style="        height: 200px;
-        margin-top: 100px;">
+    <!-- Green Border Begin -->
+    <section class="hero-section home-page set-bg" data-setbg="img/bg.jpg">
         <div class="container hero-text text-white">
             <h2 id="title"></h2>
         </div>
     </section>
-    <!-- Hero Section End -->
+    <!-- Green Border End -->
+    <!-- Species Information Begin -->
     <section class="property-details">
         <div class="container">
+            <!-- 1st Row Begin -->
             <div class="row sp-40 spt-40">
+                <!-- 1st Column Begin -->
                 <div class="col-lg-12">
                     <div class="p-ins">
+                        <!-- 1st Row Begin -->
                         <div class="row details-top">
                             <div class="col-lg-12">
                                 <div class="t-details">
                                     <div class="register-id">
-                                        <p style="color:#57595d;font-weight:bold;">Species Name: <span id="info0" style="font-weight:bold;"></span></p>
+                                        <p>Species Name:<span id="info1"></span></p>
                                     </div>
                                     <div class="popular-room-features single-property">
-                                        <div class="size" style="padding-right:10px;padding-left:10px;text-align:center;">
-                                            <p style="text-align:center;color:#57595d;font-weight:bold;">Ranking</p>
-                                            <span id="info1" style="text-align:center;font-weight:bold;"></span>
+                                        <div class="size">
+                                            <p>Ranking</p>
+                                            <span id="info2"></span>
                                         </div>
 
-                                        <div class="size" style="padding-right:10px;padding-left:10px;text-align:center;">
-                                            <p style="text-align:center;color:#57595d;font-weight:bold;">Extinction Rate</p>
-                                            <span id="info2" style="text-align:center;font-weight:bold;"></span>
+                                        <div class="size">
+                                            <p>Extinction Rate</p>
+                                            <span id="info3"></span>
                                         </div>
-                                        <div class="size" style="padding-right:10px;padding-left:10px;text-align:center;">
-                                            <p style="text-align:center;color:#57595d;font-weight:bold;"># Locations</p>
-                                            <span id="info11" style="text-align:center;font-weight:bold;"></span>
+                                        <div class="size">
+                                            <p># Locations</p>
+                                            <span id="info4"></span>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 1st Row End -->
+                        <!-- 2nd Row Begin -->
                         <div class="row">
+                            <!-- 1st Column Begin -->
                             <div class="col-lg-8">
-
                                 <div class="property-features">
-                                    <h4>Biological information</h4>
+                                    <h4>Biological Information</h4>
                                     <div class="property-table">
+                                        <!-- 1st Table Begin -->
                                         <table>
+                                            <!-- 1st Row Begin -->
                                             <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Scientific Names:</p>
-
-                                                </td>
+                                                <!-- 1st Column Begin -->
                                                 <td>
-                                                    <span id="info3"></span>
+                                                    <p>Scientific Names:</p>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Kingdom:</p>
-
-                                                </td>
-                                                <td>
-                                                    <span id="info4"></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Phylum:</p>
-
-                                                </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
                                                 <td>
                                                     <span id="info5"></span>
                                                 </td>
+                                                <!-- 2nd Column End -->
                                             </tr>
+                                            <!-- 1st Row End -->
+                                            <!-- 2nd Row Begin -->
                                             <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Class:</p>
-
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Kingdom:</p>
                                                 </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
                                                 <td>
                                                     <span id="info6"></span>
                                                 </td>
+                                                <!-- 2nd Column End -->
                                             </tr>
+                                            <!-- 2nd Row End -->
+                                            <!-- 3rd Row Begin -->
                                             <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Family:</p>
-
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Phylum:</p>
                                                 </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
                                                 <td>
                                                     <span id="info7"></span>
                                                 </td>
+                                                <!-- 2nd Column End -->
                                             </tr>
+                                            <!-- 3rd Row End -->
+                                            <!-- 4th Row Begin -->
                                             <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Genus:</p>
-
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Class:</p>
                                                 </td>
-                                                <td><span id="info8"></span></td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
+                                                <td>
+                                                    <span id="info8"></span>
+                                                </td>
+                                                <!-- 2nd Column End -->
                                             </tr>
+                                            <!-- 4th Row End -->
+                                            <!-- 5th Row Begin -->
                                             <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Taxon Rank:</p>
-
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Family:</p>
                                                 </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
                                                 <td>
                                                     <span id="info9"></span>
                                                 </td>
+                                                <!-- 2nd Column End -->
                                             </tr>
+                                            <!-- 5th Row End -->
+                                            <!-- 6th Row Begin -->
                                             <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Colour:</p>
-
-                                                </td>
-                                                <td><span id="info12"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">Size (cm):</p>
-
-                                                </td>
+                                                <!-- 1st Column Begin -->
                                                 <td>
-                                                    <span id="info13"></span>
+                                                    <p>Genus:</p>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 25%;">
-                                                    <p style="color:#57595d;">States Currently Located:</p>
-
-                                                </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
                                                 <td>
                                                     <span id="info10"></span>
                                                 </td>
+                                                <!-- 2nd Column End -->
                                             </tr>
-
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-3">
-                                <div class="room-items" style="margin-bottom: 0px;">
-                                    <div id="img1" class="room-img set-bg" style="cursor:default;opacity:1;">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-
-                                <div class="property-features">
-                                    <h4>Description</h4>
-                                    <div class="property-table">
-                                        <table>
+                                            <!-- 6th Row End -->
+                                            <!-- 7th Row Begin -->
                                             <tr>
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Taxon Rank:</p>
+                                                </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
+                                                <td>
+                                                    <span id="info11"></span>
+                                                </td>
+                                                <!-- 2nd Column End -->
+                                            </tr>
+                                            <!-- 7th Row End -->
+                                            <!-- 8th Row Begin -->
+                                            <tr>
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Colour:</p>
+                                                </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
+                                                <td>
+                                                    <span id="info12"></span>
+                                                </td>
+                                                <!-- 2nd Column End -->
+                                            </tr>
+                                            <!-- 8th Row End -->
+                                            <!-- 9th Row Begin -->
+                                            <tr>
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>Size (cm):</p>
+                                                </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
+                                                <td>
+                                                    <span id="info13"></span>
+                                                </td>
+                                                <!-- 2nd Column End -->
+                                            </tr>
+                                            <!-- 9th Row End -->
+                                            <!-- 10th Row Begin -->
+                                            <tr>
+                                                <!-- 1st Column Begin -->
+                                                <td>
+                                                    <p>States Currently Located:</p>
+
+                                                </td>
+                                                <!-- 1st Column End -->
+                                                <!-- 2nd Column Begin -->
                                                 <td>
                                                     <span id="info14"></span>
                                                 </td>
                                             </tr>
-                                         
-                                            
-
+                                            <!-- 10th Row End -->
                                         </table>
+                                        <!-- 1st Table End -->
                                     </div>
                                 </div>
                             </div>
-                            
-
-
-                            
+                            <!-- 1st Column End -->
+                            <!-- 2nd Column Begin -->
+                            <div class="col-lg-4 col-md-3 infoimage">
+                                <div class="room-items">
+                                    <div id="img1" class="room-img set-bg"></div>
+                                </div>
+                            </div>
+                            <!-- 2nd Column End -->
                         </div>
-
+                        <!-- 2nd Row End -->
+                        <!-- 3rd Row Begin -->
                         <div class="row">
                             <div class="col-lg-12">
-
                                 <div class="property-features">
-                                    <h4>Habitat</h4>
+                                    <h4>Description</h4>
                                     <div class="property-table">
                                         <table>
                                             <tr>
@@ -277,116 +306,176 @@
                                                     <span id="info15"></span>
                                                 </td>
                                             </tr>
-                                         
-                                            
-
                                         </table>
                                     </div>
                                 </div>
                             </div>
-                            
-
-
-                            
                         </div>
-
-                        
-
-                        
+                        <!-- 3rd Row End -->
+                        <!-- 4th Row Begin -->
                         <div class="row">
                             <div class="col-lg-12">
-
-                                <div class="property-features" style="padding-top:30px;">
-                                    <h4>Location</h4>
-                                    <div class="location-map" style="padding-bottom: 20px;">
-
-
-                                        <div class="col-lg-12" style="height:300px;">
-                                            <div class="folium-map" id="map"></div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="property-features">
-                                    <h4>Decline in the Existence Regions Over the past 5 Decades</h4>
-                                    <div class="location-map">
-                                        <div class="col-lg-12" style="height:300px;">
-                                            <div id="line-chart"></div>
-                                        </div>
+                                    <h4>Habitat</h4>
+                                    <div class="property-table">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span id="info16"></span>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 4th Row End -->
+                        <!-- 5th Row Begin -->
+                        <div class="row">
+                            <!-- 1st Column Begin -->
+                            <div class="col-lg-12">
+                                <div class="property-features">
+                                    <h4>Decline in the Existence Regions Over the past 5 Decades</h4>
+                                    <div class="location-map">
+                                        <!-- 1st Column Begin -->
+                                        <div class="col-lg-12">
+                                            <div id="line-chart"></div>
+                                        </div>
+                                        <!-- 1st Column End -->
+                                    </div>
+                                </div>
+                                <div class="property-features">
+                                    <h4>Current Location(s) of the species</h4>
+                                    <p>
+                                        Select a location to find out the natural causes that threaten the species habitat.
+                                    </p>
+                                    <div id="buttons">
+                                        <button>Region 1</button>
+                                        <button>Region 2</button>
+                                        <button>Region 3</button>
+                                    </div>
+                                    <div class="location-map">
+                                        <!-- 1st Column Begin -->
+                                        <div class="col-lg-12">
+                                            <div class="folium-map" id="map"></div>
+                                        </div>
+                                        <!-- 1st Column End -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1st Column End -->
+                        </div>
+                        <!-- 5th Row End -->
                     </div>
-
                 </div>
+                <!-- 1st Column End -->
             </div>
+            <!-- 1st Row End -->
         </div>
     </section>
-    <!-- Single Property Deatails Section End -->
+    <!-- Species Information End -->
     <!-- Footer Section Begin -->
     <footer class="footer-section p-40">
         <div class="container">
+            <!-- 1st Row Begin -->
             <div class="row">
+                <!-- 1st Column Begin -->
                 <div class="col-lg-12 text-center">
                     <a href="./home.html">
-                        <img src="logo7.png" alt="" style="        height: 60px;">
+                        <img src="logo7.png" alt="">
                     </a>
                 </div>
+                <!-- 1st Column End -->
             </div>
+            <!-- 1st Row End -->
+            <!-- 2nd Row Begin -->
             <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                <!-- 1st Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="./home.html" style="color:white;">Home</a>
+                        <a href="./home.html">Home</a>
                     </h6>
                 </div>
+                <!-- 1st Column End -->
+                <!-- 2nd Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="./about.html" style="color:white;">About Us</a>
+                        <a href="./about.html">About Us</a>
                     </h6>
                 </div>
+                <!-- 2nd Column End -->
+                <!-- 3rd Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="#" onclick="AUS();" style="color:white;">Search</a>
+                        <a href="#" onclick="AUS();">Search</a>
                     </h6>
                 </div>
+                <!-- 3rd Column End -->
+                <!-- 4th Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="#" onclick="AUS();" style="color:white;">Privacy Policy</a>
+                        <a href="./terms and conditions.html" onclick="AUS();">Terms of Use</a>
                     </h6>
                 </div>
+                <!-- 4th Column End -->
+                <!-- 5th Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="#" onclick="AUS();" style="color:white;">Terms and Conditions</a>
+                        <a href="./privacy policy.html" onclick="AUS();">Privacy policy</a>
                     </h6>
                 </div>
+                <!-- 5th Column End -->
             </div>
-
+            <!-- 2nd Row End -->
         </div>
-
+        <!-- 3rd Row Begin -->
         <div class="row p-20">
-            <div class="col-lg-12 text-center">
-                <div class="copyright" style="        color: white;
-        opacity: 0.6;">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!-- 1st Column Begin -->
+            <div class="col-lg-12 text-center copyright">
+                <div>
                     Copyright &copy;
-
-                    <script>document.write(new Date().getFullYear());</script> All rights reserved | Wild Cry 2019
-                    </a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | Wild Cry
                 </div>
             </div>
+            <!-- 1st Column End -->
         </div>
+        <!-- 3rd Row End -->
     </footer>
     <!-- Footer Section End -->
-    <!-- Js Plugins -->
+    <!-- Js Functions -->
     <script type="text/javascript">
-function AUS(){
+
+        function AUS(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 27-08-2019
+        @end_date: 27-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
             var value = "Australia";
             window.location.href = "index.html?category="+value;
         }
 
-        function myFunction() {
+        function Threats(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 13-09-2019
+        @end_date: 13-09-2019
+        @description: Opens the index2.html page and passes the variable "value"
+        */
+            window.location.href = "index2.html";
+        }
 
+        function myFunction() {
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 27-08-2019
+        @end_date: 27-08-2019
+        @description: Displays the endangered species information, plots the map and the trend graph
+        */
             var species = decodeURIComponent(window.location.search);
 
             species = species.substring(9);
@@ -421,8 +510,6 @@ function AUS(){
                 zoomControl: true,
                 });
 
-
-
             var tile_layer_34dc1c8b097545c0839c6284f5e8ba08 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
@@ -443,13 +530,11 @@ function AUS(){
                         )
 
                         .addTo(map);
-
-
                 }
 
             map.setView(new L.LatLng(-25.2744, 133.7751), 3);
 
-            document.getElementById("info0").innerHTML = species;
+            document.getElementById("info1").innerHTML = "&nbsp;&nbsp;" + species;
             var link1 = "url('images/" + species + ".jpg')";
             document.getElementById("img1").style.content = link1;
 
@@ -464,49 +549,50 @@ function AUS(){
             var y_1978 = 3;
             var y_1968 = 4;
 
+            // display the appropriate details
             for (var i = 0; i < data.length; i++) {
                 if (species == data[i]["Vernacular name - original"]) {
+                    // if species is found the first time
                     if (flag == 0){
-
-                        document.getElementById("info1").innerHTML = data[i]["No"];
+                        document.getElementById("info2").innerHTML = data[i]["No"];
                         var rate = parseFloat(data[i]["Rate_1968"]) * -1;
                         rate = String(rate);
                         rate = rate.slice(0, 5) + "%";
-                        document.getElementById("info2").innerHTML = rate;
-                        document.getElementById("info3").innerHTML = data[i]["Scientific Name"];
-                        document.getElementById("info4").innerHTML = data[i]["Kingdom"];
-                        document.getElementById("info5").innerHTML = data[i]["Phylum"];
-                        document.getElementById("info6").innerHTML = data[i]["Class"];
-                        document.getElementById("info7").innerHTML = data[i]["Family"];
-                        document.getElementById("info8").innerHTML = data[i]["Genus"];
-                        document.getElementById("info9").innerHTML = data[i]["Taxon Rank"];
-                        document.getElementById("info10").innerHTML = data[i]["State - parsed"];
-                        document.getElementById("info11").innerHTML = data[i]["freq"];
+                        document.getElementById("info3").innerHTML = rate;
+                        document.getElementById("info4").innerHTML = data[i]["freq"];
+                        document.getElementById("info5").innerHTML = data[i]["Scientific Name"];
+                        document.getElementById("info6").innerHTML = data[i]["Kingdom"];
+                        document.getElementById("info7").innerHTML = data[i]["Phylum"];
+                        document.getElementById("info8").innerHTML = data[i]["Class"];
+                        document.getElementById("info9").innerHTML = data[i]["Family"];
+                        document.getElementById("info10").innerHTML = data[i]["Genus"];
+                        document.getElementById("info11").innerHTML = data[i]["Taxon Rank"];
                         document.getElementById("info12").innerHTML = data[i]["Colour"];
                         document.getElementById("info13").innerHTML = data[i]["Size (cm)"];
-                        document.getElementById("info14").innerHTML = data[i]["Description"];
-                        document.getElementById("info15").innerHTML = data[i]["Habitat"];
-                        unique_scientific[data[i]["Scientific Name"]] = 1;
-                        unique_states[data[i]["State - parsed"]] = 1;
+                        document.getElementById("info14").innerHTML = data[i]["State - parsed"];
+                        document.getElementById("info15").innerHTML = data[i]["Description"];
+                        document.getElementById("info16").innerHTML = data[i]["Habitat"];
 
                         y_2018 = data[i]["2018"];
                         y_2008 = data[i]["2008"];
                         y_1998 = data[i]["1998"];
                         y_1988 = data[i]["1988"];
                         y_1978 = data[i]["1978"];
-                        y_1968 = data[i]["1968"];
+                        y_1968 = data[i]["Count_1968"];
                         flag = 1;
                     }
                     else {
 
+                        // get all the scientific names
                         if (data[i]["Scientific Name"] in unique_scientific){
                             unique_scientific[data[i]["Scientific Name"]] += 1;
                         }
                         else{
-                            alert(data[i]["Scientific Name"]);
                             document.getElementById("info3").innerHTML += ", " + data[i]["Scientific Name"];
                             unique_scientific[data[i]["Scientific Name"]] = 1;
                         }
+
+                        // get all the locations
                         if (data[i]["State - parsed"] in unique_states){
                             unique_states[data[i]["State - parsed"]] += 1;
                         }
@@ -520,6 +606,7 @@ function AUS(){
                 }
             }
 
+            // create trend chart
             var chart = new CanvasJS.Chart("line-chart", {
                 animationEnabled: true,
                 theme: "light2",
@@ -543,21 +630,7 @@ function AUS(){
 
             });
             chart.render();
-
-
-
-
-
-
-        }</script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/canvasjs.js"></script>
-    <script src="js/data.js"></script>
+        }
+    </script>
 </body>
 </html>

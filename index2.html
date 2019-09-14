@@ -22,8 +22,11 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-     <!-- JS Plugin -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">'
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <!-- JS Plugin -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
@@ -32,141 +35,128 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
-
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </head>
 
 <body onload="myFunction()">
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="container-fluid">
+            <!-- 1st Row Begin -->
             <div class="row">
+                <!-- 1st Column Begin -->
                 <div class="col-lg-12">
+                    <!-- Logo Begin -->
                     <div class="logo">
                         <a href="./home.html">
-                            <img src="logo7.png" alt="" style="        height: 60px;">
-
+                            <img src="logo7.png" alt="">
                         </a>
                     </div>
-                    <ul class="main-menu" style="        padding-top: 10px;">
-                        <li><a href="./home.html" style="        color: black;">Home</a></li>
-                        <li><a href="#" onclick="AUS();" style="        color: black;">Search</a></li>
-                        <li><a href="./about.html" style="        color: black;">About Us</a></li>
-
-
+                    <!-- Logo End -->
+                    <!-- Navigation Begin -->
+                    <ul class="main-menu">
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#">Search</a>
+                                <div class="dropdown-content">
+                                    <a class="secondary-menu" href="#" onclick="AUS();">Species</a>
+                                    <a class="secondary-menu" href="#" onclick="Threats();">Threats</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
                     </ul>
+                    <!-- Navigation End -->
+                    <!-- Mobile Menu Begin -->
                     <div id="mobile-menu-wrap"></div>
+                    <!-- Mobile Menu End -->
                 </div>
+                <!-- 1st Column End -->
             </div>
+            <!-- 1st Row End -->
         </div>
     </header>
     <!-- Header Section End -->
-    <!-- Hero Section Begin -->
-    <section class="hero-section home-page set-bg" data-setbg="img/bg.jpg" style="        margin-top: 100px;">
-        <div class="container hero-text text-white">
+    <!-- Green Border Begin -->
+    <section class="hero-section home-page set-bg search-header" data-setbg="img/bg.jpg">
+        <div class="container2 hero-text text-white">
             <h2>Endangered Species in</h2>
             <h1 id="heading"></h1>
         </div>
     </section>
-    <!-- Hero Section End -->
+    <!-- Green Border End -->
     <!-- Filter Search Section Begin -->
     <div class="filter-search">
-        <div class="container ">
-            <div class="row">
+        <div class="container1">
+            <div class="row-form">
                 <div class="col-lg-12">
                     <form class="filter-form">
-                        <!--div class="search-type">
-                            <p>Species Type</p>
-                            <select class="filter-property">
-                                <option value="">All</option>
-                                <option value="">Amphibians</option>
-                                <option value="">Mammals</option>
-                                <option value="">Reptiles</option>
-                            </select>
-                        </div>
-                        <div class="location">
-                            <p>State</p>
-                            <select class="filter-location">
-                                <option value="">All</option>
-                                <option value="">Australian Captial Terittory</option>
-                                <option value="">New South Wales</option>
-                                <option value="">Nothern Terittory</option>
-                                <option value="">Queensland</option>
-                                <option value="">South Australia</option>
-                                <option value="">Tasmania</option>
-                                <option value="">Victoria</option>
-                                <option value="">Western Australia</option>
-                            </select>
-                        </div-->
-
                         <div class="onKey">
-                            <p style="        text-align: center;
-        font-size: 20px;
-        color: #000000;">Search for an Endangered Species</p>
+                            <p>
+                                Search for an Endangered Species
+                            </p>
 
                             <input class="form-control form-control-lg" type="text" placeholder="&#x1F50D;  Search" onkeyup="Search();" id="search">
-                            <input class="type" id="search" type="text" placeholder="" title="Type in a name" style="        visibility: hidden;
-        display: none;">
-                            <div id="error" style="        color: red;
-        padding-top: 2%;
-        visibility: hidden;
-    ">
+                            <input class="type" id="search" type="text" placeholder="" title="Type in a name">
+                            <div id="error">
                                 An invalid character was found.
                             </div>
                         </div>
 
-
-                        <!--div class="search-btn">
-                            <button type="submit"><i class="flaticon-search" onClick="javascript:Search()"></i>Search</button>
-
-                        </div-->
+                    </form>
+                </div>
+            </div>
+            <div class="row-form">
+                <div class="col-lg-8">
+                    <form class="filter-form">
+                        <div class="search-type">
+                            <p>State</p>
+                            <select class="filter-property" id="states-selected" onchange="changeData();">
+                                <option selected>All</option>
+                                <option>Australian Captial Terittory</option>
+                                <option>New South Wales</option>
+                                <option>Nothern Terittory</option>
+                                <option>Queensland</option>
+                                <option>South Australia</option>
+                                <option>Tasmania</option>
+                                <option>Victoria</option>
+                                <option>Western Australia</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <form class="filter-form">
+                        <div class="search-type">
+                            <p>Sort By</p>
+                            <select class="filter-property" id="sort-selected" onchange="changeData();">
+                                <option selected>Ranking (low to high)</option>
+                                <option>Ranking (high to low)</option>
+                                <option>A - Z</option>
+                                <option>Z - A</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- Filter Search Section End -->
-    <!-- Hotel Room Section Begin -->
-    <section class="hotel-rooms spad">
-        <div class="container">
-            <div class="row" id="species">
-
-                <!--div class="col-lg-4 col-md-6">
-                    <div class="room-items">
-                        <div class="room-img set-bg" data-setbg="img/rooms/1.jpg">
-
-                        </div>
-                        <div class="room-text">
-                            <div class="room-details">
-                                <div class="room-title">
-
-                                    <h5 style="text-align: center;">#1 Endagered Species Name</h5>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div-->
-
-
-            </div>
-        </div>
-    </section>
     <!-- Species Location Section Begin -->
-    <div class="container hero-text text-black">
-        <h2>Endangered Species by Location</h2>
-    </div>
     <section class="hotel-rooms spad">
         <div class="container">
             <!-- 1st Row Begin -->
             <div class="row">
                 <!-- 1st Column Begin -->
-                <div class="col-lg-4 col-md-6" onclick="AUS();">
+                <div class="col-lg-4 col-md-6" onclick="AUS1();">
                     <div class="room-items">
                         <div class="room-img set-bg" style="        content: url(images/AUS.jpg);"></div>
                         <div class="room-text">
@@ -299,84 +289,213 @@
     <!-- Footer Section Begin -->
     <footer class="footer-section p-40">
         <div class="container">
+            <!-- 1st Row Begin -->
             <div class="row">
+                <!-- 1st Column Begin -->
                 <div class="col-lg-12 text-center">
                     <a href="./home.html">
-                        <img src="logo7.png" alt="" style="        height: 60px;">
+                        <img src="logo7.png" alt="">
                     </a>
                 </div>
+                <!-- 1st Column End -->
             </div>
+            <!-- 1st Row End -->
+            <!-- 2nd Row Begin -->
             <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                <!-- 1st Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="./home.html" style="color:white;">Home</a>
+                        <a href="./home.html">Home</a>
                     </h6>
                 </div>
+                <!-- 1st Column End -->
+                <!-- 2nd Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="./about.html" style="color:white;">About Us</a>
+                        <a href="./about.html">About Us</a>
                     </h6>
                 </div>
+                <!-- 2nd Column End -->
+                <!-- 3rd Column Begin -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="#" onclick="AUS();" style="color:white;">Search</a>
+                        <a href="#" onclick="AUS();">Search</a>
                     </h6>
                 </div>
-
+                <!-- 3rd Column End -->
+                <!-- 4th Column Begin -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./terms and conditions.html" onclick="AUS();">Terms of Use</a>
+                    </h6>
+                </div>
+                <!-- 4th Column End -->
+                <!-- 5th Column Begin -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./privacy policy.html" onclick="AUS();">Privacy policy</a>
+                    </h6>
+                </div>
+                <!-- 5th Column End -->
             </div>
-
+            <!-- 2nd Row End -->
         </div>
-
+        <!-- 3rd Row Begin -->
         <div class="row p-20">
-            <div class="col-lg-12 text-center">
-                <div class="copyright" style="        color: white;
-        opacity: 0.6;">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!-- 1st Column Begin -->
+            <div class="col-lg-12 text-center copyright">
+                <div>
                     Copyright &copy;
-
-                    <script>document.write(new Date().getFullYear());</script> All rights reserved | Wild Cry 2019
-                    </a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | Wild Cry
                 </div>
             </div>
+            <!-- 1st Column End -->
         </div>
+        <!-- 3rd Row End -->
     </footer>
     <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script type="text/javascript">
-document.getElementById("search")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        document.getElementById("id_of_button").click();
-    }
-});
-    function AUS(){
+
+        // Prevent the page from reloading on enter key
+        document.getElementById("search")
+            .addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("id_of_button").click();
+            }
+        });
+
+        function emptySearch(){
+            document.getElementById("search").value = "";
+        }
+
+        function AUS(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
             var value = "Australia";
             window.location.href = "index.html?category="+value;
         }
 
-
-function myFunction() {
-
-            var category = decodeURIComponent(window.location.search);
-
-            category = category.substring(10);
-            document.getElementById("heading").innerHTML = category;
-            
-
+        function Threats(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 13-09-2019
+        @end_date: 13-09-2019
+        @description: Opens the index2.html page and passes the variable "value"
+        */
+            window.location.href = "index2.html";
         }
 
+        function AUS1(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Australia";
+            window.location.href = "regions.html?category="+value;
+        }
 
-</script>
+        function ACT(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Australian Capital Territory";
+            window.location.href = "regions.html?category="+value;
+        }
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/data.js"></script>
+        function NSW(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "New South Wales";
+            window.location.href = "regions.html?category="+value;
+        }
+
+        function NT(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Northern Territory";
+            window.location.href = "regions.html?category="+value;
+        }
+
+        function QLD(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Queensland";
+            window.location.href = "regions.html?category="+value;
+        }
+
+        function SA(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "South Australia";
+            window.location.href = "regions.html?category="+value;
+        }
+
+        function TAS(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Tasmania";
+            window.location.href = "regions.html?category="+value;
+        }
+
+        function VIC(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Victoria";
+            window.location.href = "regions.html?category="+value;
+        }
+
+        function WA(){
+        /*
+        @author: Ishika Wikramanayake
+        @start_date: 25-08-2019
+        @end_date: 25-08-2019
+        @description: Opens the index.html page and passes the variable "value"
+        */
+            var value = "Western Australia";
+            window.location.href = "regions.html?category="+value;
+        }
+    </script>
+
+
 </body>
 </html>
+
+

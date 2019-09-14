@@ -84,7 +84,7 @@ var data = [
    "Colour": "Grey, White"
  },
  {
-   "Vernacular name - original": "Common Planigale",
+   "Vernacular name - original": "Common planigale",
    "Scientific Name": "Planigale maculata",
    "Taxon Rank": "species",
    "Kingdom": "Animalia",
@@ -1932,7 +1932,7 @@ var data = [
    "Colour": "Grey, Brown"
  },
  {
-   "Vernacular name - original": " Little whip snake",
+   "Vernacular name - original": "Little whip snake",
    "Scientific Name": "Parasuta flagellum",
    "Taxon Rank": "species",
    "Kingdom": "Animalia",
@@ -4648,7 +4648,7 @@ var data = [
    "Colour": "\tBrown"
  },
  {
-   "Vernacular name - original": " Bardick",
+   "Vernacular name - original": "Bardick",
    "Scientific Name": "Echiopsis curta",
    "Taxon Rank": "species",
    "Kingdom": "Animalia",
