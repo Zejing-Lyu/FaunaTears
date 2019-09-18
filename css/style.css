@@ -1,3 +1,69 @@
+.rank-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.rectangle {
+    width: 100px;
+    height: 75px;
+    background: #48654E;
+    align-content: center;
+    border-bottom-left-radius: 25px;
+    box-shadow: 3px 4px rgba(72, 101, 78, 0.5);
+}
+
+    .rectangle p {
+        font-size: 16px;
+        color: white;
+    }
+
+    .rectangle h2 {
+        margin-top: -5px;
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+    }
+
+.fav {
+    float: right;
+}
+
+.collapse {
+    display: none;
+}
+
+.map-details {
+    width: 100%;
+    height: 800px;
+}
+
+.map-home {
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+.map-home-img {
+    height: 600px;
+}
+
+.map-info {
+    padding: 15px;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -147,10 +213,14 @@
     height: 60px;
 }
 
-.font-weight-bold a {
+.text-center ul li a {
     color: white;
 }
 
+    .text-center ul li a:hover {
+        font-weight: bold;
+        text-decoration: none;
+    }
 
 html, body {
     height: 100%;
@@ -253,6 +323,10 @@ ol {
 
 .spad {
     padding-top: 100px;
+}
+
+.spad2 {
+    padding-top: 50px;
 }
 
 .spad-2 {
@@ -375,12 +449,13 @@ ol {
 -----------------------*/
 
 .header-section {
-    padding: 25px 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 99;
+    background-color: white;
+    border-bottom: 1px solid #D3D3D3;
 }
 
 .logo {
@@ -389,13 +464,22 @@ ol {
 }
 
     .logo a img {
-        height: 60px;
+        height: 100px;
+    }
+
+.logo2 {
+    float: left;
+    display: inline-block;
+}
+
+    .logo2 a img {
+        height: 80px;
     }
 
 .main-menu {
     float: right;
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 35px;
 }
 
     .main-menu li {
@@ -406,10 +490,14 @@ ol {
             color: black;
             display: inline-block;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 400;
             margin-left: 35px;
             padding: 4px 5px;
         }
+
+            .main-menu li a:hover {
+                font-weight: bold;
+            }
 
 .slicknav_menu {
     display: none;
@@ -455,6 +543,50 @@ ol {
     }
 
     .hero-section:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #48654E;
+        content: "";
+        z-index: -1;
+    }
+
+.hero-section1 {
+    position: relative;
+    z-index: 1;
+    height: 200px;
+    margin-top: 100px;
+}
+
+    .hero-section1 .home-page {
+        margin-bottom: -57px;
+    }
+
+    .hero-section1:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #48654E;
+        content: "";
+        z-index: -1;
+    }
+
+.hero-section2 {
+    position: relative;
+    z-index: 1;
+    height: 0px;
+    margin-top: 100px;
+}
+
+    .hero-section2 .home-page {
+        margin-bottom: -57px;
+    }
+
+    .hero-section2:after {
         position: absolute;
         left: 0;
         top: 0;
@@ -772,7 +904,34 @@ html .ui-button.ui-state-disabled:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 100px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.about-us .about-text-warp-home2 {
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-us .about-text-warp-home3 {
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 90px;
+    padding-right: 15px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -786,13 +945,29 @@ html .ui-button.ui-state-disabled:active {
         border: 2px solid;
     }
 
+.about-text-warp-home .form2 {
+    text-align: center;
+    max-width: 80%;
+    padding-top: 50px;
+}
+
+    .about-text-warp-home .form2 .btn {
+        font-weight: bold;
+        border: 2px solid;
+    }
+
 .about-us .about-text {
     max-width: 560px;
     text-align: justify;
-    padding-bottom: 14px;
 }
 
 .about-us .about-text-home {
+    text-align: justify;
+    max-width: 80%;
+    height: auto;
+}
+
+.about-us .about-text-home2 {
     text-align: justify;
     max-width: 80%;
     height: auto;
@@ -803,14 +978,11 @@ html .ui-button.ui-state-disabled:active {
     font-size: 25px;
     line-height: 48px;
     font-weight: 500;
-    margin-bottom: 20px;
 }
 
 .about-us .about-text p {
     color: #ddddde;
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .about-us .about-text .about-us-bold {
@@ -822,7 +994,39 @@ html .ui-button.ui-state-disabled:active {
 
 .about-us .about-text-home p {
     font-weight: 300;
+    padding-top: 50px;
     margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+
+.about-us .about-text-home2 h2 {
+    font-weight: bold;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.about-us .about-text-home2 p {
+    font-weight: 300;
+    padding-top: 25px;
+    font-size: 20px;
+    color: black;
+}
+
+.about-us .about-text-home2 .p-italics {
+    font-weight: 300;
+    padding-top: 25px;
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+}
+
+.about-us .about-text-home2 .p-heading {
+    font-weight: 300;
+    padding-top: 25px;
     font-size: 24px;
     color: black;
 }
@@ -841,20 +1045,20 @@ html .ui-button.ui-state-disabled:active {
 
     .about-us .about-img img {
         display: inline-block;
-        width: 70%;
-        height: 337px;
+        width: 65%;
+        height: 368px;
         float: left;
     }
 
     .about-us .about-img .l-img {
-        height: 399px;
+        height: 368px;
     }
 
     .about-us .about-img .r-img {
-        width: 30%;
+        width: 35%;
         height: 736px;
         display: inline-block;
-        margin-top: -337px;
+        margin-top: -368px;
         float: right;
     }
 
@@ -1059,6 +1263,7 @@ html .ui-button.ui-state-disabled:active {
         font-weight: bold;
         font-size: 18px;
         margin-top: 17px;
+        margin-bottom: 0px;
     }
 
         .t-details .register-id p span {
@@ -1066,6 +1271,12 @@ html .ui-button.ui-state-disabled:active {
             color: #30304e;
             font-weight: bold;
         }
+
+    .t-details .register-id p1 {
+        color: gray;
+        font-size: 14px;
+        margin-top: 0px;
+    }
 
 .t-details .popular-room-features.single-property {
     padding-top: 0;
@@ -1621,7 +1832,6 @@ table tr td {
 
 .car-img {
     border-radius: 4px 4px 0 0;
-    height: 600px;
     position: relative;
     width: 100%;
 }
