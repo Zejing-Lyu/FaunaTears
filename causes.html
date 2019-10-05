@@ -113,9 +113,7 @@
                         </div>
                         <div class="row">
                             <!-- Species Images Begin -->
-                            <div class="container">
-                                <div class="row" id="region">
-                                </div>
+                            <div class="row" id="region">
                             </div>
                             <!-- Species Images End -->
                         </div>
@@ -146,8 +144,14 @@
                                         <div id="centered" class="top-centered">Please wait while we fetch the data from Global Forest Watch</div>
                                         <div class="card-body">
                                             <embed id="1" />
+                                        </div>
+                                        <div class="card-body">
                                             <embed id="2" />
+                                        </div>
+                                        <div class="card-body">
                                             <embed id="3" />
+                                        </div>
+                                        <div class="card-body">
                                             <embed id="4" />
                                         </div>
                                     </div>
@@ -327,62 +331,42 @@
                 if (regionData[i]["Region"] == region) {
                     if (regionData[i]["graph1"] != "") {
                         var graph = document.getElementById("1");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph1"];
                     }
                     if (regionData[i]["graph2"] != "") {
                         var graph = document.getElementById("2");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph2"];
                     }
                     if (regionData[i]["graph3"] != "") {
                         var graph = document.getElementById("3");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph3"];
                     }
                     if (regionData[i]["graph4"] != "") {
                         var graph = document.getElementById("4");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph4"];
                     }
                     if (regionData[i]["graph5"] != "") {
                         var graph = document.getElementById("5");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph5"];
                     }
                     if (regionData[i]["graph6"] != "") {
                         var graph = document.getElementById("6");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph6"];
                     }
                     if (regionData[i]["graph7"] != "") {
                         var graph = document.getElementById("7");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph7"];
                     }
                     if (regionData[i]["graph8"] != "") {
                         var graph = document.getElementById("8");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph8"];
                     }
                     if (regionData[i]["graph9"] != "") {
                         var graph = document.getElementById("9");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph9"];
                     }
                     if (regionData[i]["graph10"] != "") {
                         var graph = document.getElementById("10");
-                        graph.setAttribute('height', '540');
-                        graph.setAttribute('width', '1000');
                         graph.src = regionData[i]["graph10"];
                     }
                     break;

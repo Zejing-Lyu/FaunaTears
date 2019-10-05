@@ -2,6 +2,7 @@
     position: relative;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
 .top-left {
@@ -53,12 +54,13 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 100px;
-    padding-top: 15px;
+    align-content: center;
+    text-align: center;
 }
 
 .map-home-img {
-    height: 600px;
+    width: 70%;
+    height: auto;
 }
 
 .map-info {
@@ -109,23 +111,19 @@
         font-size: 14px;
         color: #61616e;
         font-weight: 300;
-        padding-top: 2.5%;
-        padding-left: 2.5%;
+        padding: 2.5%;
         height: 30px;
     }
 
     .search-type .filter-property {
+        margin-top: -2.5%;
         border-bottom: 1px solid #E7E7E7;
         float: none;
-        margin-top: -10px;
-        height: 34px;
-        line-height: 34px;
+        height: 33.5px;
         padding-left: 2.5%;
     }
 
         .search-type .filter-property:after {
-            border-bottom: 2px solid #3F3F4B;
-            border-right: 2px solid #3F3F4B;
             height: 7px;
             width: 7px;
         }
@@ -162,6 +160,8 @@
 
 .infoimage {
     padding-top: 10%;
+    width: 100%;
+    height: auto;
 }
 
 #map_9b7d76ad92c2435f8ef89790667a066b {
@@ -649,8 +649,9 @@ ol {
     }
 
 .filter-form {
+    width: 100%;
     background: #fff;
-    height: 100%;
+    height: auto;
 }
 
 .location {
@@ -2713,13 +2714,10 @@ table tr td {
     }
 
     .filter-form {
-        width: 60%;
+        width: 100%;
         margin: auto;
     }
 
-    .filter-form {
-        height: 502px;
-    }
 
     .location {
         padding: 20px 27px 10px;
@@ -2818,7 +2816,8 @@ table tr td {
     }
 
     .filter-form {
-        height: 502px;
+        width: 100%;
+        height: auto;
     }
 
     .location {
@@ -2997,7 +2996,8 @@ table tr td {
     }
 
     .filter-form {
-        height: 502px;
+        width: 100%;
+        height: auto;
     }
 
     .location {
