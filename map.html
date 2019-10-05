@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Fauna Tears | Terms of Use</title>
+    <title>Fauna Tears | Map</title>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
           rel="stylesheet">
@@ -32,7 +32,7 @@
 
 
 </head>
-<body>
+<body onload="myfunction();">
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="container-fluid">
@@ -85,6 +85,8 @@
     <!-- Main Text Section Begin -->
     <section>
         <embed class="map-details" src="https://monashuni.maps.arcgis.com/apps/MapSeries/index.html?appid=620056f296c540bbb0e21c74993dd1a0" />
+        <div id="centered" class="centered">Please wait while we fetch the data from ArcGIS StoryMaps</div>
+
     </section>
     <!-- Main Text Section End -->
     <!-- Footer Section Begin -->
@@ -182,6 +184,13 @@
         */
             var value = "Australia";
             window.location.href = "index.html?category="+value;
+        }
+        function myfunction() {
+            window.setTimeout("closeHelpDiv();", 2000);
+        }
+
+        function closeHelpDiv(){
+            document.getElementById('centered').innerHTML='';
         }
 
     </script>

@@ -22,10 +22,11 @@
     .rectangle p {
         font-size: 16px;
         color: white;
+        margin-top: 5px;
     }
 
     .rectangle h2 {
-        margin-top: -5px;
+        margin-top: -7px;
         font-size: 24px;
         color: white;
         font-weight: bold;
@@ -873,6 +874,25 @@ html .ui-button.ui-state-disabled:active {
     border-bottom: solid 1px #E7E7E7;
     border: 0;
     padding-left: 0;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.top-centered {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /*---------------------
@@ -2667,24 +2687,25 @@ table tr td {
 
 /* Medium Screen : 1280px */
 
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .logo {
-        display: block;
-        float: none;
-        text-align: center;
-        margin-bottom: 10px;
-    }
 
-    .main-menu {
-        text-align: center;
-        float: none;
-        display: block;
-        text-align: center;
+    .about-us .about-text-warp-home3 {
+        background: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 90px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-
-        .main-menu li:first-child a {
-            margin-left: 0;
-        }
 
     .top-social {
         margin-left: 30px;
@@ -2771,31 +2792,25 @@ table tr td {
         font-size: 15px;
     }
 }
-
 /* Tablet : 768px */
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .logo {
-        display: block;
-        float: none;
-        text-align: center;
-        margin-bottom: 10px;
+
+    .about-us .about-text-warp-home3 {
+        background: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 90px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-
-    .main-menu {
-        text-align: center;
-        float: none;
-        display: block;
-        text-align: center;
-    }
-
-        .main-menu li a {
-            margin-left: 20px;
-        }
-
-        .main-menu li:first-child a {
-            margin-left: 0;
-        }
 
     .top-social {
         margin-left: 30px;
@@ -2909,10 +2924,26 @@ table tr td {
         margin-bottom: 30px;
     }
 }
-
 /* Large Mobile : 480px */
-
 @media only screen and (max-width: 767px) {
+
+    .about-us .about-text-warp-home3 {
+        background: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 90px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
     .main-menu {
         display: none;
     }
@@ -3101,10 +3132,26 @@ table tr td {
         right: 5px;
     }
 }
-
 /* Small Mobile :320px. */
-
 @media only screen and (max-width: 479px) {
+
+    .about-us .about-text-warp-home3 {
+        background: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 90px;
+        padding-right: 15px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
     .hero-text h2 {
         font-size: 35px;
     }

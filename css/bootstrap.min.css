@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -4847,12 +4848,21 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     color: #6c757d
 }
 
+.Page {
+    text-align: center;
+    padding: 2.5%;
+}
+
+.pagination-hidden {
+    display: none;
+}
+
 .pagination {
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     padding-left: 0;
     list-style: none;
-    border-radius: .25rem
+    border-radius: .25rem;
 }
 
 .page-link {
@@ -4868,10 +4878,12 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
     .page-link:hover {
         z-index: 2;
-        color: #0056b3;
+        color: #ffffff;
         text-decoration: none;
         background-color: #e9ecef;
-        border-color: #dee2e6
+        border-color: #dee2e6;
+        cursor: pointer;
+        font-weight: bold;
     }
 
     .page-link:focus {
@@ -4894,16 +4906,25 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     .page-item.active .page-link {
         z-index: 1;
         color: #fff;
-        background-color: #007bff;
-        border-color: #007bff
+        background-color: #48654E;
+        border-color: #48654E;
+        font-weight: bold;
     }
+
+        .page-item.active .page-link:hover {
+            z-index: 1;
+            color: #fff;
+            background-color: #5F8968;
+            border-color: #5F8968;
+            font-weight: bold;
+        }
 
     .page-item.disabled .page-link {
         color: #6c757d;
         pointer-events: none;
         cursor: auto;
         background-color: #fff;
-        border-color: #dee2e6
+        border-color: #dee2e6;
     }
 
 .pagination-lg .page-link {
