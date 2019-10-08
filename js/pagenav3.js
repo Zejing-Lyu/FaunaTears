@@ -11,20 +11,7 @@ function pageNavigation(category){
     else {
         pages.setAttribute("class", "pagination");
         
-        var loop = 0;
-        if (category == "Australia") {
-            loop = 9
-        }
-
-        if (category == "Northern Territory" || category == "South Australia" || category == "Western Australia" || category == "Amphibia" || category == "Reptilia - Queensland" || category == "Reptilia - South Australia" || category == "Reptilia - Victoria" || category == "Reptilia - Western Australia") {
-            loop = 2
-        }
-        if (category == "Queensland" || category == "Victoria" || category == "Mammalia") {
-            loop = 3
-        }
-        if (category == "Reptilia") {
-            loop = 6
-        }
+        var loop = 10;
 
         var newli = document.createElement("li");
         var newa = document.createElement("a");

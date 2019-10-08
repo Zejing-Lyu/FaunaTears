@@ -120,67 +120,16 @@ function updateData() {
 
     if (pageNo == 0) {
         lowerLimit = 0;
-        upperLimit = 12;
+        upperLimit = 15;
     }
-
     if (pageNo == 1) {
         lowerLimit = 0;
-        upperLimit = 12;
+        upperLimit = 15;
     }
 
-    if (pageNo == 2) {
-        lowerLimit = 12;
-        upperLimit = 24;
-    }
-
-    if (pageNo == 3) {
-        lowerLimit = 24;
-        upperLimit = 36;
-    }
-
-    if (pageNo == 4) {
-        lowerLimit = 36;
-        upperLimit = 48;
-    }
-
-    if (pageNo == 5) {
-        lowerLimit = 48;
-        upperLimit = 60;
-    }
-
-    if (pageNo == 6) {
-        lowerLimit = 60;
-        upperLimit = 72;
-    }
-
-    if (pageNo == 7) {
-        lowerLimit = 72;
-        upperLimit = 84;
-    }
-
-    if (pageNo == 8) {
-        lowerLimit = 84;
-        upperLimit = 96;
-    }
-
-    if (pageNo == 9) {
-        lowerLimit = 96;
-        upperLimit = 108;
-    }
-
-    if (pageNo == 10) {
-        lowerLimit = 108;
-        upperLimit = 120;
-    }
-
-    if (pageNo == 11) {
-        lowerLimit = 120;
-        upperLimit = 132;
-    }
-
-    if (pageNo == 12) {
-        lowerLimit = 132;
-        upperLimit = 144;
+    if (pageNo > 1) {
+        lowerLimit = 15 * (pageNo - 1);
+        upperLimit = 15 * pageNo;
     }
 
     if (sortIndex == 0) {

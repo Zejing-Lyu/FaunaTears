@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Homes Template">
-    <meta name="keywords" content="Homes, unica, creative, html">
+    <meta name="description" content="Fauna Tears">
+    <meta name="keywords" content="fauna tears, save, endangered species, html, threats, wild life, blue planet, blue planet - wildlife conservation, wildlife conservation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fauna Tears | Region Information</title>
@@ -13,10 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
           rel="stylesheet">
     <link rel="shortcut icon" href="logo-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Css Styles -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
@@ -34,55 +33,44 @@
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
     <script src="js/region.js"></script>
+    <script src="js/navigation.js"></script>
 
 
 </head>
 
 <body onload="myFunction()">
+    <!-- Page Preloder Begin -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Page Preloder End -->
     <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container-fluid">
-            <!-- 1st Row Begin -->
-            <div class="row">
-                <!-- 1st Column Begin -->
-                <div class="col-lg-12">
-                    <!-- Logo Begin -->
-                    <div class="logo">
-                        <a href="./home.html">
-                            <img src="logo.png" alt="">
-                        </a>
-                    </div>
-                    <!-- Logo End -->
-                    <!-- Navigation Begin -->
-                    <ul class="main-menu">
-                        <li>
-                            <a href="./home.html">Home</a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <a href="#">Search</a>
-                                <div class="dropdown-content">
-                                    <a class="secondary-menu" href="#" onclick="AUS();">Species</a>
-                                    <a class="secondary-menu" href="./index2.html">Threats</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="./map.html">Map</a>
-                        </li>
-                        <li>
-                            <a href="./about.html">About Us</a>
-                        </li>
-                    </ul>
-                    <!-- Navigation End -->
-                    <!-- Mobile Menu Begin -->
-                    <div id="mobile-menu-wrap"></div>
-                    <!-- Mobile Menu End -->
-                </div>
-                <!-- 1st Column End -->
-            </div>
-            <!-- 1st Row End -->
-        </div>
+    <header class="header">
+        <a class="logo" href="./home.html">
+            <img src="logo.png" alt="">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li>
+                <a href="./home.html">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="AUS();">Find Species</a>
+            </li>
+            <li>
+                <a href="./index2.html">Find Threats</a>
+            </li>
+            <li>
+                <a a href="#" onclick="AUS2('Australia');">Volunteer</a>
+            </li>
+            <li>
+                <a href="./map.html">Map</a>
+            </li>
+            <li>
+                <a href="./about.html">About Us</a>
+            </li>
+        </ul>
     </header>
     <!-- Header Section End -->
     <!-- Green Border Begin -->
@@ -130,46 +118,51 @@
                         </div>
                         <!-- 2nd Row End -->
                         <!-- 3rd Row Begin -->
-
+                        <!-- 3rd Row Begin -->
                         <div class="row">
                             <div class="col-lg-12">
-                                <ul class="nav nav-tabs">
-                                    <li class="active"><a data-toggle="tab" href="#home"><h5>Forest Change</h5></a></li>
-                                    <li><a data-toggle="tab" href="#menu1"><h5>Land Cover</h5></a></li>
-                                    <li><a data-toggle="tab" href="#menu2"><h5>Climate</h5></a></li>
-                                </ul>
-
-                                <div class="tab-content">
-                                    <div id="home" class="tab-pane fade in active">
-                                        <div id="centered" class="top-centered">Please wait while we fetch the data from Global Forest Watch</div>
-                                        <div class="card-body">
-                                            <embed id="1" />
-                                        </div>
-                                        <div class="card-body">
-                                            <embed id="2" />
-                                        </div>
-                                        <div class="card-body">
-                                            <embed id="3" />
-                                        </div>
-                                        <div class="card-body">
-                                            <embed id="4" />
+                                <div id="accordion">
+                                    <div class="card">
+                                        <button class="card-header mb-0 btn btn-link collapsed" type="button">
+                                            Forest Change
+                                            <i class="fa fa-caret-square-o-down fav fa-2x" aria-hidden="true"></i>
+                                        </button>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div id="centered" class="top-centered">Please wait while we fetch the data from Global Forest Watch</div>
+                                                <embed id="1" class="embed-responsive" />
+                                                <embed id="2" class="embed-responsive" />
+                                                <embed id="3" class="embed-responsive" />
+                                                <embed id="4" class="embed-responsive" />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div id="menu1" class="tab-pane fade">
-                                        <div class="card-body">
-                                            <embed id="5" />
-                                            <embed id="6" />
-                                            <embed id="7" />
+                                    <div class="card">
+                                        <button class="card-header mb-0 btn btn-link collapsed" type="button">
+                                            Land Cover
+                                            <i class="fa fa-caret-square-o-down fav fa-2x" aria-hidden="true"></i>
+                                        </button>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <embed id="5" class="embed-responsive" />
+                                                <embed id="6" class="embed-responsive" />
+                                                <embed id="7" class="embed-responsive" />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div id="menu2" class="tab-pane fade">
-                                        <div class="card-body" id="3">
-                                            <embed id="8" />
-                                            <embed id="9" />
-                                            <embed id="10" />
+                                    <div class="card">
+                                        <button class="card-header mb-0 btn btn-link collapsed" type="button">
+                                            Climate
+                                            <i class="fa fa-caret-square-o-down fav fa-2x" aria-hidden="true"></i>
+                                        </button>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body" id="3">
+                                                <embed id="8" class="embed-responsive" />
+                                                <embed id="9" class="embed-responsive" />
+                                                <embed id="10" class="embed-responsive" />
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -187,7 +180,7 @@
             <!-- 1st Row Begin -->
             <div class="row">
                 <!-- 1st Column Begin -->
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center logo2">
                     <a href="./home.html">
                         <img src="logo2.png" alt="">
                     </a>
@@ -222,6 +215,9 @@
                         </li>
                         <li>
                             <a href="./index2.html">Find Threats</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="AUS2('Australia');">Volunteer</a>
                         </li>
                         <li>
                             <a href="./map.html">Explore Map</a>
@@ -287,16 +283,6 @@
             }
           });
         }
-        function AUS(){
-        /*
-        @author: Ishika Wikramanayake
-        @start_date: 27-08-2019
-        @end_date: 27-08-2019
-        @description: Opens the index.html page and passes the variable "value"
-        */
-            var value = "Australia";
-            window.location.href = "index.html?category="+value;
-        }
 
         function closeHelpDiv(){
             document.getElementById('centered').innerHTML='';
@@ -310,7 +296,7 @@
         @description: Displays the region information, plots the map and the trend graph
         */
 
-            window.setTimeout("closeHelpDiv();", 2000);
+            window.setTimeout("closeHelpDiv();", 2500);
 
             var region = decodeURIComponent(window.location.search);
 

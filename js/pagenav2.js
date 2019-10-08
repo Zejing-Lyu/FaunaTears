@@ -13,14 +13,11 @@ function pageNavigation(category){
         
         var loop = 0;
         if (category == "Australia") {
-            loop = 12
+            loop = 10
         }
 
-        if (category == "New South Wales" || category == "South Australia" || category == "Victoria") {
+        if (category == "New South Wales" || category == "Queensland" || category == "South Australia" || category == "Victoria" || category == "Western Australia") {
             loop = 2
-        }
-        if (category == "Queensland" || category == "Western Australia") {
-            loop = 3
         }
 
         var newli = document.createElement("li");

@@ -9,17 +9,16 @@ function myFunction() {
     var category = decodeURIComponent(window.location.search);
     category = category.substring(10);
 
-
     // update the heading with the category
     document.getElementById("heading").innerHTML = category;
-
+    
     updateFilterForm(category);
 
     var row = document.getElementById("species");
     var unique = {};
 
     pageNavigation(category);
-    
+
     // check which section was selected in the previous page
     
     if (category == "Australia") {
@@ -30,9 +29,9 @@ function myFunction() {
             }
         }
     }
-    if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Northern Territory" || category == "Queensland" || category == "South Australia" || category == "Tasmania" || category == "Victoria" || category == "Western Australia") {
+    if (category == "Plant Trees" || category == "Rescue Fauna" || category == "Spread Awareness" || category == "Attend Conservation Workshops" || category == "Donate" || category == "Citizen Science") {
         for (var i = 0; i < data.length; i++) {
-            if (data[i]["State - parsed"] == category) {
+            if (data[i]["type"] == category) {
                 unique = populateSpecies(i, row, unique, data[i]);
             }
             if (Object.keys(unique).length == 15) {
@@ -40,17 +39,4 @@ function myFunction() {
             }
         }
     }
-    else {
-        if (category == "Amphibia" || category == "Mammalia" || category == "Reptilia") {
-            for (var i = 0; i < data.length; i++) {
-                if (data[i]["Class"] == category) {
-                    unique = populateSpecies(i, row, unique, data[i]);
-                }
-                if (Object.keys(unique).length == 15) {
-                    break;
-                }
-            }
-        }
-    }
-    
 }

@@ -4050,7 +4050,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     }
 }
 
-.nav {
+.property-details .nav {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -4075,37 +4075,37 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
         cursor: default
     }
 
-.nav-tabs {
+.property-details .nav-tabs {
     border-bottom: 1px solid #dee2e6
 }
 
-    .nav-tabs .nav-item {
+    .property-details .nav-tabs .nav-item {
         margin-bottom: -1px
     }
 
-    .nav-tabs .nav-link {
+    .property-details .nav-tabs .nav-link {
         border: 1px solid transparent;
         border-top-left-radius: .25rem;
         border-top-right-radius: .25rem
     }
 
-        .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+        .property-details .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
             border-color: #e9ecef #e9ecef #dee2e6
         }
 
-        .nav-tabs .nav-link.disabled {
+        .property-details .nav-tabs .nav-link.disabled {
             color: #6c757d;
             background-color: transparent;
             border-color: transparent
         }
 
-        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        .property-details .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
             color: #495057;
             background-color: #fff;
             border-color: #dee2e6 #dee2e6 #fff
         }
 
-    .nav-tabs .dropdown-menu {
+    .property-details .nav-tabs .dropdown-menu {
         margin-top: -1px;
         border-top-left-radius: 0;
         border-top-right-radius: 0
@@ -4587,13 +4587,18 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     position: relative;
+    overflow: hidden;
+    border: none;
 }
 
-card-body embed {
-    min-width: 100%;
-    height: 100%;
+card-body iframe {
+    width: 100%;
+    height: auto;
+    overflow: hidden !important;
+    border: none;
     display: block;
 }
 
@@ -7007,8 +7012,9 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
     position: relative;
     display: block;
     width: 100%;
+    height: 500px;
     padding: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
     .embed-responsive::before {

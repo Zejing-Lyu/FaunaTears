@@ -7,7 +7,7 @@
     <meta name="keywords" content="fauna tears, save, endangered species, html, threats, wild life, blue planet, blue planet - wildlife conservation, wildlife conservation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fauna Tears | Search for Species</title>
+    <title>Fauna Tears | Search for Threats</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
@@ -32,14 +32,15 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/onload.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/pagenav.js"></script>
-    <script src="js/updateFilterForm.js"></script>
-    <script src="js/updatepagination.js"></script>
+    <script src="js/onload3.js"></script>
+    <script src="js/actions.js"></script>
+    <script src="js/search3.js"></script>
+    <script src="js/filter3.js"></script>
+    <script src="js/pagenav3.js"></script>
+    <script src="js/updateFilterForm3.js"></script>
+    <script src="js/updatepagination3.js"></script>
     <script src="js/navigation.js"></script>
+
 
 </head>
 
@@ -81,7 +82,7 @@
     <!-- Green Border Begin -->
     <section class="hero-section home-page set-bg search-header" data-setbg="img/bg.jpg">
         <div class="container2 hero-text text-white">
-            <h2>Endangered Species in</h2>
+            <h2>Activities in </h2>
             <h1 id="heading"></h1>
         </div>
     </section>
@@ -94,7 +95,7 @@
                     <form class="filter-form">
                         <div class="onKey">
                             <p>
-                                Search for an Endangered Species
+                                Search for an Activity
                             </p>
 
                             <input class="form-control form-control-lg" type="text" placeholder="&#x1F50D;  Search" onkeyup="Search();" id="search">
@@ -111,12 +112,15 @@
                 <div class="col-lg-4">
                     <form class="filter-form">
                         <div class="search-type">
-                            <p>Species Type</p>
-                            <select class="filter-property" id="species-selected" onchange="changeData();">
+                            <p>Activity Type</p>
+                            <select class="filter-property" id="activity-selected" onchange="changeData();">
                                 <option selected>All</option>
-                                <option>Amphibians</option>
-                                <option>Mammals</option>
-                                <option>Reptiles</option>
+                                <option>Plant Trees</option>
+                                <option>Rescue Fauna</option>
+                                <option>Spread Awareness</option>
+                                <option>Attend Conservation Workshops</option>
+                                <option>Donate</option>
+                                <option>Citizen Science</option>
                             </select>
                         </div>
                     </form>
@@ -144,8 +148,6 @@
                         <div class="search-type">
                             <p>Sort By</p>
                             <select class="filter-property" id="sort-selected" onchange="changeData();">
-                                <option selected>Ranking (high to low)</option>
-                                <option>Ranking (low to high)</option>
                                 <option>A - Z</option>
                                 <option>Z - A</option>
                             </select>
@@ -156,19 +158,35 @@
         </div>
     </div>
     <!-- Filter Search Section End -->
-    <!-- Species Images Begin -->
-    <section class="hotel-rooms spad">
-        <div class="container">
-            <div class="row" id="species">
+    <section class="about-us">
+        <div class="container-fluid">
+            <!-- 1st Row Begin -->
+            <div class="row">
+                <!-- 1st Column Begin -->
+                <div class="col-xl-12 about-text-warp-home2">
+                    <div class="about-text-home2">
+
+                        <p>
+                            Select an activity to learn more about it.
+                        </p>
+
+                    </div>
+                </div>
+                <!-- 1st Column End -->
 
             </div>
-
-
+            <!-- 1st Row End -->
+        </div>
+    </section>
+    <!-- Species Images Begin -->
+    <section class="hotel-rooms spad2">
+        <div class="container">
+            <div class="row" id="species">
+            </div>
         </div>
         <nav id="pageNav" class="Page" aria-label="Page navigation example">
             <ul id="pages" class="pagination"></ul>
         </nav>
-
     </section>
     <!-- Species Images End -->
     <!-- Footer Section Begin -->
@@ -259,7 +277,6 @@
     <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script type="text/javascript">
-
         // Prevent the page from reloading on enter key
         document.getElementById("search")
             .addEventListener("keyup", function(event) {
@@ -273,81 +290,226 @@
             document.getElementById("search").value = "";
         }
 
-
-
         function populateSpecies(i, row, unique, item) {
         /*
         @author: Ishika Wikramanayake
-        @start_date: 13-09-2019
-        @end_date: 13-09-2019
+        @start_date: 14-09-2019
+        @end_date: 14-09-2019
         @description: Opens the index.html page and passes the variable "value"
         */
-            // update the occurence in the dictionary on encounter
-            if (item["Vernacular name - original"] in unique){
-                unique[item["Vernacular name - original"]] += 1;
-            }
-            else{
-                // create html tags
-                var div1 = document.createElement("div");
-                var div2 = document.createElement("div");
-                var div3 = document.createElement("div");
-                var div4 = document.createElement("div");
-                var div5 = document.createElement("div");
-                var div6 = document.createElement("div");
-                var div7 = document.createElement("div");
-                var div8 = document.createElement("div");
-                var h2 = document.createElement("h2");
-                var h5 = document.createElement("h5");
-                var p = document.createElement("p");
 
+            var div1 = document.createElement("div");
+            var div2 = document.createElement("div");
+            var div3 = document.createElement("div");
+            var div4 = document.createElement("div");
+            var div5 = document.createElement("div");
+            var div6 = document.createElement("div");
+            var div7 = document.createElement("div");
+            var div8 = document.createElement("div");
+            var div9 = document.createElement("div");
+            var div10 = document.createElement("div");
+            var div11 = document.createElement("div");
+            var div12 = document.createElement("div");
+            var div13 = document.createElement("div");
+            var div14 = document.createElement("div");
+            var div15 = document.createElement("div");
+            var div16 = document.createElement("div");
+            var div17 = document.createElement("div");
+            var div18 = document.createElement("div");
+            var div19 = document.createElement("div");
+            var div20 = document.createElement("div");
+            var div21 = document.createElement("div");
+            var div22 = document.createElement("div");
+            var div23 = document.createElement("div");
+            var div24 = document.createElement("div");
+            var div25 = document.createElement("div");
+            var div26 = document.createElement("div");
+            var div27 = document.createElement("div");
+            var div28 = document.createElement("div");
+            var div29 = document.createElement("div");
+            var div30 = document.createElement("div");
+            var div31 = document.createElement("div");
+            var div32 = document.createElement("div");
+            var div33 = document.createElement("div");
+            var div34 = document.createElement("div");
+            var div35 = document.createElement("div");
+            var div36 = document.createElement("div");
+            var div37 = document.createElement("div");
 
-                // add relevant attributes to the tags created
-                div1.setAttribute("class", "col-lg-4 col-md-6");
-                div1.setAttribute("id", item["Vernacular name - original"]);
-                div1.onclick = function() {
-                    var value = this.id;
-                    window.location.href = "info.html?species="+value;
-                };
+            var h5 = document.createElement("h5");
 
-                div2.setAttribute("class", "room-items");
+            var h61 = document.createElement("h6");
+            var h62 = document.createElement("h6");
+            var h63 = document.createElement("h6");
+            var h64 = document.createElement("h6");
+            var h65 = document.createElement("h6");
+            var h66 = document.createElement("h6");
 
-                div3.setAttribute("class", "rank-container");
+            var span1 = document.createElement("span");
+            var span2 = document.createElement("span");
+            var span3 = document.createElement("span");
+            var span4 = document.createElement("span");
+            var span5 = document.createElement("span");
+            var span6 = document.createElement("span");
 
-                div4.setAttribute("class", "room-img set-bg");
-                var name = item["Vernacular name - original"].replace('\'', '_');
-                var link = "url('images/" + name + ".jpg')";
-                div4.style.content = link;
+            var i1 = document.createElement("i");
+            var i2 = document.createElement("i");
+            var i3 = document.createElement("i");
+            var i4 = document.createElement("i");
 
-                div5.setAttribute("class", "rectangle top-left");
+            var form = document.createElement("form");
+            var button = document.createElement("button");
 
-                p.innerHTML = "Rank";
+            div1.setAttribute("class", "room-items grab");
+            div1.setAttribute("id", item["Id"]);
+            div1.onclick = function() {
+                var value = this.id;
+                window.location.href = "activity.html?species="+value;
+            };
 
-                h2.innerHTML = "#" + item["Rank"];
+            div2.setAttribute("class", "row");
+            div7.setAttribute("class", "row");
+            div11.setAttribute("class", "row");
+            div15.setAttribute("class", "row");
+            div20.setAttribute("class", "row");
+            div24.setAttribute("class", "row");
+            div28.setAttribute("class", "row");
+            div32.setAttribute("class", "row");
+            div36.setAttribute("class", "row");
 
-                div6.setAttribute("class", "room-text");
+            div3.setAttribute("class", "col-lg-3 col-md-3");
+            div6.setAttribute("class", "col-lg-6");
+            div19.setAttribute("class", "col-lg-3");
 
-                div7.setAttribute("class", "room-details");
+            div4.setAttribute("class", "room-items1");
 
-                div8.setAttribute("class", "room-title");
+            div5.setAttribute("class", "room-img1 set-bg");
+            div5.style.content = "url(" + item["Logo"] + ")";
 
-                h5.innerHTML = item["Vernacular name - original"];
-                h5.style.textAlign = "center";
+            div8.setAttribute("class", "room-text1");
+            div12.setAttribute("class", "room-text1");
+            div16.setAttribute("class", "room-text1");
+            div21.setAttribute("class", "room-text1");
+            div25.setAttribute("class", "room-text1");
+            div29.setAttribute("class", "room-text1");
+            div33.setAttribute("class", "room-text1");
 
-                // append children to get the proper order of the indented html tags
-                div8.appendChild(h5);
-                div7.appendChild(div8);
-                div6.appendChild(div7);
-                div5.appendChild(p);
-                div5.appendChild(h2);
-                div3.appendChild(div4);
-                div3.appendChild(div5);
-                div2.appendChild(div3);
-                div2.appendChild(div6);
-                div1.appendChild(div2);
-                row.appendChild(div1);
+            div9.setAttribute("class", "room-details");
+            div13.setAttribute("class", "room-details");
+            div17.setAttribute("class", "room-details");
+            div22.setAttribute("class", "room-details");
+            div26.setAttribute("class", "room-details");
+            div30.setAttribute("class", "room-details");
+            div34.setAttribute("class", "room-details");
 
-                unique[item["Vernacular name - original"]] = 1;
-            }
+            div10.setAttribute("class", "room-title");
+            div14.setAttribute("class", "room-title");
+            div18.setAttribute("class", "room-title");
+            div23.setAttribute("class", "room-title");
+            div27.setAttribute("class", "room-title");
+            div31.setAttribute("class", "room-title");
+            div35.setAttribute("class", "room-title");
+
+            h5.innerHTML = item["Organisation"];
+
+            h61.setAttribute("class", "h6");
+            h62.setAttribute("class", "h6");
+            h62.innerHTML = "Who can participate?";
+            h63.setAttribute("class", "h5");
+
+            span1.innerHTML =  item["Description"]
+            span2.innerHTML = item["Roles"]
+            span3.innerHTML = item["Type"]
+            span4.innerHTML = item["Location"]
+            span5.innerHTML = item["Phone"]
+            span6.innerHTML = item["Email"]
+
+            i1.setAttribute("class", "fa fa-bookmark fa-05x");
+            i2.setAttribute("class", "fa fa-map-marker");
+            i3.setAttribute("class", "fa fa-phone");
+            i4.setAttribute("class", "fa fa-envelope");
+
+            div37.setAttribute("class", "padding");
+
+            form.setAttribute("class", "form");
+
+            button.setAttribute("class", "btn btn-outline-secondary");
+            button.setAttribute("type", "button");
+            button.innerHTML = "Visit Website";
+            button.setAttribute("id", item["Website"]);
+            button.onclick = function() {
+                var url = this.id;
+                var win = window.open(url, '_blank');
+                win.focus();
+            };
+
+            div4.appendChild(div5);
+            div3.appendChild(div4);
+
+            div10.appendChild(h5);
+            div9.appendChild(div10);
+            div8.appendChild(div9);
+            div7.appendChild(div8);
+            div6.appendChild(div7);
+
+            h61.appendChild(span1);
+            div14.appendChild(h61);
+            div13.appendChild(div14);
+            div12.appendChild(div13);
+            div11.appendChild(div12);
+            div6.appendChild(div11);
+
+            h62.appendChild(span2);
+            div18.appendChild(h62);
+            div17.appendChild(div18);
+            div16.appendChild(div17);
+            div15.appendChild(div16);
+            div6.appendChild(div15);
+
+            h63.appendChild(i1);
+            h63.appendChild(span3);
+            div23.appendChild(h63);
+            div22.appendChild(div23);
+            div21.appendChild(div22);
+            div20.appendChild(div21);
+            div19.appendChild(div20);
+
+            h64.appendChild(i2);
+            h64.appendChild(span4);
+            div27.appendChild(h64);
+            div26.appendChild(div27);
+            div25.appendChild(div26);
+            div24.appendChild(div25);
+            div19.appendChild(div24);
+
+            h65.appendChild(i3);
+            h65.appendChild(span5);
+            div31.appendChild(h65);
+            div30.appendChild(div31);
+            div29.appendChild(div30);
+            div28.appendChild(div29);
+            div19.appendChild(div28);
+
+            h66.appendChild(i4);
+            h66.appendChild(span6);
+            div35.appendChild(h66);
+            div34.appendChild(div35);
+            div33.appendChild(div34);
+            div32.appendChild(div33);
+            div19.appendChild(div32);
+
+            form.appendChild(button);
+            div37.appendChild(form);
+            div36.appendChild(div37);
+            div19.appendChild(div36);
+
+            div2.appendChild(div3);
+            div2.appendChild(div6);
+            div2.appendChild(div19);
+
+            div1.appendChild(div2);
+            row.appendChild(div1);
+
 
             return unique;
         }
@@ -359,13 +521,8 @@
         @end_date: 13-09-2019
         @description: Opens the index.html page and passes the variable "value"
         */
-            // update the occurence in the dictionary on encounter
-            if (item["Vernacular name - original"] in unique){
-                unique[item["Vernacular name - original"]] += 1;
-            }
-            else{
-                unique[item["Vernacular name - original"]] = 1;
-            }
+            unique[item["Organisation"]] = 1;
+
 
             return unique;
         }
@@ -375,5 +532,3 @@
 
 </body>
 </html>
-
-

@@ -268,14 +268,50 @@ function updateData() {
         lowerLimit = 0;
         upperLimit = 15;
     }
+
     if (pageNo == 1) {
         lowerLimit = 0;
         upperLimit = 15;
     }
 
-    if (pageNo > 1) {
-        lowerLimit = 15 * (pageNo - 1);
-        upperLimit = 15 * pageNo;
+    if (pageNo == 2) {
+        lowerLimit = 15;
+        upperLimit = 30;
+    }
+
+    if (pageNo == 3) {
+        lowerLimit = 30;
+        upperLimit = 45;
+    }
+
+    if (pageNo == 4) {
+        lowerLimit = 45;
+        upperLimit = 60;
+    }
+
+    if (pageNo == 5) {
+        lowerLimit = 60;
+        upperLimit = 75;
+    }
+
+    if (pageNo == 6) {
+        lowerLimit = 75;
+        upperLimit = 90;
+    }
+
+    if (pageNo == 7) {
+        lowerLimit = 90;
+        upperLimit = 105;
+    }
+
+    if (pageNo == 8) {
+        lowerLimit = 105;
+        upperLimit = 120;
+    }
+
+    if (pageNo == 9) {
+        lowerLimit = 120;
+        upperLimit = 135;
     }
 
     if (sortIndex == 0) {
