@@ -6,21 +6,22 @@ function updateFilterForm(category) {
 @description: Update the filter form when loading the page
 */
     if (category == "Plant Trees") {
-        document.getElementById("activity-selected").selectedIndex = "1";
+        document.getElementById("species-selected").selectedIndex = "1";
     }
     if (category == "Rescue Fauna") {
-        document.getElementById("activity-selected").selectedIndex = "2";
+        document.getElementById("species-selected").selectedIndex = "2";
     }
     if (category == "Spread Awareness") {
-        document.getElementById("activity-selected").selectedIndex = "3";
+        document.getElementById("species-selected").selectedIndex = "3";
     }
     if (category == "Attend Conservation Workshops") {
-        document.getElementById("activity-selected").selectedIndex = "4";
+        document.getElementById("states-selected").selectedIndex = "1";
     }
     if (category == "Donate") {
-        document.getElementById("activity-selected").selectedIndex = "5";
+        document.getElementById("states-selected").selectedIndex = "2";
     }
     if (category == "Citizen Science") {
-        document.getElementById("activity-selected").selectedIndex = "6";
+        document.getElementById("states-selected").selectedIndex = "3";
     }
+
 }

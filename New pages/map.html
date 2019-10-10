@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fauna Tears">
+    <meta name="keywords" content="fauna tears, save, endangered species, html, threats, wild life, blue planet, blue planet - wildlife conservation, wildlife conservation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Fauna Tears | Map</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="logo-icon.png" type="image/x-icon">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+
+    <!-- JS Plugin -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/actions.js"></script>
+    <script src="js/navigation.js"></script>
+
+</head>
+<body onload="myfunction();">
+    <!-- Page Preloder Begin -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Page Preloder End -->
+    <!-- Header Section Begin -->
+    <header class="header">
+        <a class="logo" href="./home.html">
+            <img src="logo.png" alt="">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li>
+                <a href="./home.html">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="AUS();">Endangered Species</a>
+            </li>
+            <li>
+                <a href="./index2.html">Threats</a>
+            </li>
+            <li>
+                <a a href="#" onclick="AUS2('Australia');">Volunteer</a>
+            </li>
+            <li>
+                <a href="./map.html">Map</a>
+            </li>
+            <li>
+                <a href="./about.html">About Us</a>
+            </li>
+        </ul>
+    </header>
+    <!-- Header Section End -->
+    <!-- Green Border Begin -->
+    <section class="hero-section2 set-bg" data-setbg="img/bg.jpg"></section>
+    <!-- Green Border End -->
+    <!-- Main Text Section Begin -->
+    <section>
+        <embed class="map-details" src="https://www.arcgis.com/apps/Cascade/index.html?appid=31a5a28c075c42028dee2bf843fafd96" />
+        <div id="centered" class="centered">Please wait until we fetch live data from various APIs . . .</div>
+
+    </section>
+    <!-- Main Text Section End -->
+    <!-- Main Text Section End -->
+    <!-- Footer Section Begin -->
+    <footer class="footer-section p-40">
+        <div class="container">
+            <!-- 1st Row Begin -->
+            <div class="row">
+                <!-- 1st Column Begin -->
+                <div class="col-lg-12 text-center">
+                    <a href="./home.html">
+                        <img src="logo2.png" alt="">
+                    </a>
+                </div>
+                <!-- 1st Column End -->
+            </div>
+            <!-- 1st Row End -->
+            <br />
+            <!-- 2nd Row Begin -->
+            <div class="row">
+                <!-- 1st Column Begin -->
+                <div class="col-lg-3">
+                </div>
+                <!-- 1st Column End -->
+                <!-- 2nd Column Begin -->
+                <div class="col-lg-2 text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 2nd Column End -->
+                <!-- 3rd Column Begin -->
+                <div class="col-lg-2 text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="AUS();">Endangered Species</a>
+                        </li>
+                        <li>
+                            <a href="./index2.html">Threats</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="AUS2('Australia');">Volunteer</a>
+                        </li>
+                        <li>
+                            <a href="./map.html">Explore Map</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 3rd Column End -->
+                <!-- 4th Column Begin -->
+                <div class="col-lg-2 text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./terms and conditions.html">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="./privacy policy.html">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 4th Column End -->
+                <!-- 5th Column Begin -->
+                <div class="col-lg-3">
+                </div>
+                <!-- 5th Column End -->
+            </div>
+            <!-- 2nd Row End -->
+        </div>
+        <br />
+        <!-- 3rd Row Begin -->
+        <div class="row p-20">
+            <!-- 1st Column Begin -->
+            <div class="col-lg-12 text-center copyright">
+                <div>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | Fauna Tears
+                </div>
+            </div>
+            <!-- 1st Column End -->
+        </div>
+        <!-- 3rd Row End -->
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Js Functions Begin -->
+    <script type="text/javascript">
+        function myfunction() {
+            window.setTimeout("closeHelpDiv();", 2000);
+
+        }
+
+        function closeHelpDiv(){
+            document.getElementById('centered').innerHTML='';
+        }
+
+    </script>
+    <!-- Js Functions End -->
+</body>
+</html>

@@ -258,7 +258,7 @@
     border: 1px solid #F3F3F3;
     float: left;
     width: 100%;
-    height: 71px;
+    height: 59.5px;
 }
 
     .search-type p {
@@ -267,6 +267,7 @@
         font-weight: 300;
         padding: 2.5%;
         height: 30px;
+        margin-bottom: 5px;
     }
 
     .search-type .filter-property {
@@ -284,7 +285,7 @@
 
         .search-type .filter-property span {
             color: #3f3f4b;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
         }
 
@@ -667,6 +668,9 @@ ol {
     z-index: 1;
     height: 300px;
     margin-top: 100px;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
 }
 
     .hero-section .home-page {
@@ -825,7 +829,7 @@ ol {
 
 .onKey {
     float: left;
-    padding: 20px 27px 29px;
+    padding: 15px 27px;
     width: 100%;
     border-radius: 10px;
 }
@@ -853,7 +857,7 @@ ol {
 
     .onKey #error {
         color: red;
-        padding-top: 2%;
+        padding-top: 5px;
         visibility: hidden
     }
 
@@ -1010,11 +1014,13 @@ html .ui-button.ui-state-disabled:active {
 /* Centered text */
 .centered {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: bold;
     font-size: 30px;
+    vertical-align: middle;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .top-centered {
@@ -3313,6 +3319,56 @@ table tr td {
 /* Tablet : 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+    .container2 h2 {
+        font-size: 1.9rem;
+    }
+
+    .container2 h1 {
+        font-size: 3.3rem;
+    }
+
+    .search-type {
+        border: 1px solid #F3F3F3;
+        float: left;
+        width: 100%;
+        height: 58px;
+        padding: 0px;
+    }
+
+        .search-type p {
+            font-size: 12px;
+            color: #61616e;
+            font-weight: 300;
+            padding: 2.5%;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .search-type .filter-property {
+            margin-top: -2.5%;
+            border-bottom: 1px solid #E7E7E7;
+            float: none;
+            height: 35px;
+            padding-left: 2.5%;
+        }
+
+            .search-type .filter-property:after {
+                height: 7px;
+                width: 7px;
+            }
+
+            .search-type .filter-property span {
+                color: #3f3f4b;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .search-type .filter-property .list {
+                width: 100%;
+                border-radius: 0;
+                margin-top: 1px;
+            }
+
     .row .room-text1 .room-details .room-title h6 span {
         font-size: 11px;
     }
@@ -3451,11 +3507,6 @@ table tr td {
         width: 500%;
     }
 
-    .search-type {
-        padding: 10px 27px 10px;
-        width: 500%;
-    }
-
     .price-range {
         padding: 10px 45px 10px 27px;
         width: 100%;
@@ -3563,6 +3614,56 @@ table tr td {
 }
 /* Large Mobile : 480px */
 @media only screen and (max-width: 767px) {
+
+    .container2 h2 {
+        font-size: 1.9rem;
+    }
+
+    .container2 h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-type {
+        border: 1px solid #F3F3F3;
+        float: left;
+        width: 100%;
+        height: 60px;
+        padding: 0px;
+    }
+
+        .search-type p {
+            font-size: 12px;
+            color: #61616e;
+            font-weight: 300;
+            padding: 2.5%;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .search-type .filter-property {
+            margin-top: -2.5%;
+            border-bottom: 1px solid #E7E7E7;
+            float: none;
+            height: 33.5px;
+            padding-left: 2.5%;
+        }
+
+            .search-type .filter-property:after {
+                height: 7px;
+                width: 7px;
+            }
+
+            .search-type .filter-property span {
+                color: #3f3f4b;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .search-type .filter-property .list {
+                width: 100%;
+                border-radius: 0;
+                margin-top: 1px;
+            }
 
     .row .room-text1 .room-details .room-title h6 span {
         font-size: 9px;
@@ -3898,6 +3999,52 @@ table tr td {
 
 /* Small Mobile :320px. */
 @media only screen and (max-width: 479px) {
+
+    .container2 h2 {
+        font-size: 1.9rem;
+    }
+
+    .search-type {
+        border: 1px solid #F3F3F3;
+        float: left;
+        width: 100%;
+        height: 60px;
+        padding: 0px;
+    }
+
+        .search-type p {
+            font-size: 12px;
+            color: #61616e;
+            font-weight: 300;
+            padding: 2.5%;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .search-type .filter-property {
+            margin-top: -2.5%;
+            border-bottom: 1px solid #E7E7E7;
+            float: none;
+            height: 33.5px;
+            padding-left: 2.5%;
+        }
+
+            .search-type .filter-property:after {
+                height: 7px;
+                width: 7px;
+            }
+
+            .search-type .filter-property span {
+                color: #3f3f4b;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            .search-type .filter-property .list {
+                width: 100%;
+                border-radius: 0;
+                margin-top: 1px;
+            }
 
     .row .room-text1 .room-details .room-title h6 span {
         font-size: 9px;

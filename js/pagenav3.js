@@ -4,14 +4,17 @@ function pageNavigation(category){
     while (pages.firstChild) {
         pages.removeChild(pages.firstChild);
     }
-    if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Tasmania" || category == "Amphibia - Australian Capital Territory" || category == "Amphibia - New South Wales" || category == "Amphibia - Northern Territory" || category == "Amphibia - Queensland" || category == "Amphibia - South Australia" || category == "Amphibia - Tasmania" || category == "Amphibia - Victoria" || category == "Amphibia - Western Australia" || category == "Mammalia - Australian Capital Territory" || category == "Mammalia - New South Wales" || category == "Mammalia - Northern Territory" || category == "Mammalia - Queensland" || category == "Mammalia - South Australia" || category == "Mammalia - Tasmania" || category == "Mammalia - Victoria" || category == "Mammalia - Western Australia"  || category == "Reptilia - Australian Capital Territory" || category == "Reptilia - New South Wales" || category == "Reptilia - Northern Territory" || category == "Reptilia - Tasmania") {
+    if (category != "Australia") {
         pages.setAttribute("class", "pagination-hidden");
 
     }
     else {
         pages.setAttribute("class", "pagination");
         
-        var loop = 10;
+        var loop = 0;
+        if (category == "Australia") {
+            loop = 2
+        }
 
         var newli = document.createElement("li");
         var newa = document.createElement("a");
