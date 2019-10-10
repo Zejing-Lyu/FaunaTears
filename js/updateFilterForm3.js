@@ -15,13 +15,13 @@ function updateFilterForm(category) {
         document.getElementById("species-selected").selectedIndex = "3";
     }
     if (category == "Attend Conservation Workshops") {
-        document.getElementById("states-selected").selectedIndex = "1";
+        document.getElementById("species-selected").selectedIndex = "4";
     }
     if (category == "Donate") {
-        document.getElementById("states-selected").selectedIndex = "2";
+        document.getElementById("species-selected").selectedIndex = "5";
     }
     if (category == "Citizen Science") {
-        document.getElementById("states-selected").selectedIndex = "3";
+        document.getElementById("species-selected").selectedIndex = "6";
     }
 
 }

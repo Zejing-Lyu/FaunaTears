@@ -356,11 +356,8 @@ function changeData() {
 
 function updateData() {
 
-    //alert("test");
-    var pages = document.getElementById("pages");
-    
-    emptySearch();
 
+    var pages = document.getElementById("pages");
     // get the indices of the selected items from the three filters
     var speciesIndex = document.getElementById("species-selected").selectedIndex;
     var stateIndex = document.getElementById("states-selected").selectedIndex;
@@ -373,6 +370,8 @@ function updateData() {
     while (row.firstChild) {
         row.removeChild(row.firstChild);
     }
+
+
 
     var newlist = [];
     for (i = 0; i < data.length; i++) {
@@ -395,6 +394,7 @@ function updateData() {
         }
     }
 
+
     if (pageNo == 0) {
         lowerLimit = 0;
         upperLimit = 10;
@@ -404,12 +404,12 @@ function updateData() {
         upperLimit = 10;
     }
 
-    if (pageNo > 1) {
-        lowerLimit = 10 * (pageNo - 1);
-        upperLimit = 10 * pageNo;
+    if (pageNo == 2) {
+        lowerLimit = 10;
+        upperLimit = 20;
     }
 
-        flag = sort(newlist, flag, lowerLimit, upperLimit, row, category);
+    flag = sort(newlist, flag, lowerLimit, upperLimit, row, category);
 
     if (flag == 0) {
         var p = document.createElement("p");
