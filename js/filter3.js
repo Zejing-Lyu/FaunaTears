@@ -340,7 +340,7 @@ function changeData() {
     //alert("test");
     var pages = document.getElementById("pages");
     
-    emptySearch();
+    //emptySearch();
 
     // get the indices of the selected items from the three filters
     var speciesIndex = document.getElementById("species-selected").selectedIndex;
@@ -355,7 +355,6 @@ function changeData() {
 }
 
 function updateData() {
-
 
     var pages = document.getElementById("pages");
     // get the indices of the selected items from the three filters
@@ -421,6 +420,7 @@ function updateData() {
 
 function sort(array, flag, lowerLimit, upperLimit, row, category) {
     var unique = {};
+
     if (category == "Australia") {
 
         for (var i = 0; i < array.length; i++) {
