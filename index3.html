@@ -7,7 +7,7 @@
     <meta name="keywords" content="fauna tears, save, endangered species, html, threats, wild life, blue planet, blue planet - wildlife conservation, wildlife conservation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fauna Tears | Search for Species</title>
+    <title>Fauna Tears | Search for Activities</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
@@ -34,7 +34,6 @@
     <script src="js/main.js"></script>
     <script src="js/actions.js"></script>
     <script src="js/onload3.js"></script>
-    <script src="js/search3.js"></script>
     <script src="js/filter3.js"></script>
     <script src="js/pagenav3.js"></script>
     <script src="js/updateFilterForm3.js"></script>
@@ -61,16 +60,16 @@
                 <a href="./home.html">Home</a>
             </li>
             <li>
+                <a href="./map.html">Explore Map</a>
+            </li>
+            <li>
                 <a href="#" onclick="AUS();">Endangered Species</a>
             </li>
             <li>
                 <a href="./index2.html">Threats</a>
             </li>
             <li>
-                <a a href="#" onclick="AUS2('Australia');">Get Involved</a>
-            </li>
-            <li>
-                <a href="./map.html">Map</a>
+                <a a href="#" onclick="AUS2('Australia');" class="active">Get Involved</a>
             </li>
             <li>
                 <a href="./about.html">About Us</a>
@@ -91,14 +90,12 @@
         <div class="container1">
 
             <div class="row-form1">
-                <div class="col-lg-2">
-                </div>
                 <div class="col-lg-4">
                     <form class="filter-form">
                         <div class="search-type">
                             <p>Activity Type</p>
                             <select class="filter-property" id="species-selected" onchange="changeData();">
-                                <option selected>All</option>
+                                <option>All</option>
                                 <option>Plant Trees</option>
                                 <option>Rescue Fauna</option>
                                 <option>Spread Awareness</option>
@@ -127,7 +124,16 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
+                    <form class="filter-form">
+                        <div class="search-type">
+                            <p>Sort By</p>
+                            <select class="filter-property" id="sort-selected" onchange="changeData();">
+                                <option selected>A - Z</option>
+                                <option>Z - A</option>
+                            </select>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -205,6 +211,9 @@
                 <div class="col-lg-2 text-center">
                     <ul class="list-unstyled">
                         <li>
+                            <a href="./map.html">Explore Map</a>
+                        </li>
+                        <li>
                             <a href="#" onclick="AUS();">Endangered Species</a>
                         </li>
                         <li>
@@ -212,9 +221,6 @@
                         </li>
                         <li>
                             <a href="#" onclick="AUS2('Australia');">Get Involved</a>
-                        </li>
-                        <li>
-                            <a href="./map.html">Explore Map</a>
                         </li>
                     </ul>
                 </div>
@@ -256,20 +262,6 @@
     <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script type="text/javascript">
-
-        // Prevent the page from reloading on enter key
-        document.getElementById("search")
-            .addEventListener("keyup", function(event) {
-            event.preventDefault();
-            if (event.keyCode === 13) {
-                document.getElementById("id_of_button").click();
-            }
-        });
-
-        function emptySearch(){
-            document.getElementById("search").value = "";
-        }
-
 
 
         function populateSpecies(i, row, unique, item) {
@@ -332,7 +324,7 @@
                 var h66 = document.createElement("h6");
 
                 var span1 = document.createElement("span");
-                var span2 = document.createElement("span");
+                var button2 = document.createElement("button");
                 var span3 = document.createElement("span");
                 var span4 = document.createElement("span");
                 var span5 = document.createElement("span");
@@ -346,12 +338,8 @@
                 var form = document.createElement("form");
                 var button = document.createElement("button");
 
-                div1.setAttribute("class", "room-items grab");
+                div1.setAttribute("class", "room-items activity");
                 div1.setAttribute("id", item["Id"]);
-                div1.onclick = function() {
-                    var value = this.id;
-                    window.location.href = "activity.html?species="+value;
-                };
 
                 div2.setAttribute("class", "row");
                 div7.setAttribute("class", "row");
@@ -400,11 +388,11 @@
 
                 h61.setAttribute("class", "h6");
                 h62.setAttribute("class", "h6");
-                h62.innerHTML = "Who can participate?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+                h62.innerHTML = "Who can participate?&nbsp&nbsp";
                 h63.setAttribute("class", "h5");
 
                 span1.innerHTML =  item["Description"]
-                span2.innerHTML = item["Roles"]
+                //span2.innerHTML = "Learn More"
                 span3.innerHTML = item["Type"]
                 span4.innerHTML = item["Location"]
                 span5.innerHTML = item["Phone"]
@@ -419,7 +407,7 @@
 
                 form.setAttribute("class", "form");
 
-                button.setAttribute("class", "btn btn-outline-secondary");
+                button.setAttribute("class", "btn3 btn-outline-secondary");
                 button.setAttribute("type", "button");
                 button.innerHTML = "Visit Website";
                 button.setAttribute("id", item["Website"]);
@@ -427,6 +415,15 @@
                     var url = this.id;
                     var win = window.open(url, '_blank');
                     win.focus();
+                };
+
+                button2.setAttribute("class", "btn3 btn-outline-secondary");
+                button2.setAttribute("type", "button");
+                button2.innerHTML = "Learn More";
+                button2.setAttribute("id", item["Id"]);
+                button2.onclick = function() {
+                    var value = this.id;
+                    window.location.href = "activity.html?species="+value;
                 };
 
                 div4.appendChild(div5);
@@ -438,19 +435,19 @@
                 div7.appendChild(div8);
                 div6.appendChild(div7);
 
-                h61.appendChild(span1);
+                div14.appendChild(span1);
                 div14.appendChild(h61);
                 div13.appendChild(div14);
                 div12.appendChild(div13);
                 div11.appendChild(div12);
                 div6.appendChild(div11);
 
-                h62.appendChild(span2);
-                div18.appendChild(h62);
-                div17.appendChild(div18);
-                div16.appendChild(div17);
-                div15.appendChild(div16);
-                div6.appendChild(div15);
+                //div18.appendChild(button2);
+                //div18.appendChild(h61);
+                //div17.appendChild(div18);
+                //div16.appendChild(div17);
+                //div15.appendChild(div16);
+                //div6.appendChild(div15);
 
                 h63.appendChild(i1);
                 h63.appendChild(span3);
@@ -484,6 +481,7 @@
                 div32.appendChild(div33);
                 div19.appendChild(div32);
 
+                form.appendChild(button2);
                 form.appendChild(button);
                 div37.appendChild(form);
                 div36.appendChild(div37);

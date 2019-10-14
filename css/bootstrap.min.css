@@ -2523,6 +2523,47 @@ textarea.form-control {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
+.btn2 {
+    display: inline-block;
+    font-weight: bolder;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.btn3 {
+    display: inline-block;
+    font-weight: bolder;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    margin-right: 10px;
+    font-size: .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
 @media (prefers-reduced-motion:reduce) {
     .btn {
         transition: none
@@ -4658,6 +4699,8 @@ card-body iframe {
     }
 
     .card-header:hover {
+        background-color: #5F8968;
+        border-bottom: 1px solid #5F8968;
         cursor: pointer;
     }
 
@@ -6385,7 +6428,7 @@ a.close.disabled {
     }
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev, .carousel-control-down {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -6404,16 +6447,16 @@ a.close.disabled {
 }
 
 @media (prefers-reduced-motion:reduce) {
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next, .carousel-control-prev, .carousel-control-down {
         transition: none
     }
 }
 
-.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover, .carousel-control-down:focus, .carousel-control-down:hover {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    opacity: .9
+    opacity: .9;
 }
 
 .carousel-control-prev {
@@ -6424,7 +6467,16 @@ a.close.disabled {
     right: 0
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-down {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon, .carousel-control-down-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -6436,6 +6488,10 @@ a.close.disabled {
 }
 
 .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")
+}
+
+.carousel-control-down-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e")
 }
 

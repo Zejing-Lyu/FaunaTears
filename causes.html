@@ -56,16 +56,16 @@
                 <a href="./home.html">Home</a>
             </li>
             <li>
+                <a href="./map.html">Explore Map</a>
+            </li>
+            <li>
                 <a href="#" onclick="AUS();">Endangered Species</a>
             </li>
             <li>
-                <a href="./index2.html">Threats</a>
+                <a href="./index2.html" class="active">Threats</a>
             </li>
             <li>
                 <a a href="#" onclick="AUS2('Australia');">Get Involved</a>
-            </li>
-            <li>
-                <a href="./map.html">Map</a>
             </li>
             <li>
                 <a href="./about.html">About Us</a>
@@ -99,12 +99,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <!-- Species Images Begin -->
-                            <div class="row" id="region">
-                            </div>
-                            <!-- Species Images End -->
+                        <!-- Species Images Begin -->
+                        <div class="row" id="region">
                         </div>
+                        <!-- Species Images End -->
                         <!-- 1st Row End -->
                         <!-- 2nd Row Begin -->
                         <div class="row">
@@ -123,7 +121,7 @@
                             <div class="col-lg-12">
                                 <div id="accordion">
                                     <div class="card">
-                                        <button class="card-header mb-0 btn btn-link collapsed" type="button">
+                                        <button class="card-header mb-0 btn btn-link collapsed" type="button" onclick="closeHelpDiv()">
                                             Forest Change
                                             <i class="fa fa-caret-square-o-down fav fa-2x" aria-hidden="true"></i>
                                         </button>
@@ -138,12 +136,13 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <button class="card-header mb-0 btn btn-link collapsed" type="button">
+                                        <button class="card-header mb-0 btn btn-link collapsed" type="button" onclick="closeHelpDiv2()">
                                             Land Cover
                                             <i class="fa fa-caret-square-o-down fav fa-2x" aria-hidden="true"></i>
                                         </button>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                             <div class="card-body">
+                                                <div id="centered2" class="top-centered">Please wait until we fetch live data from various APIs . . .</div>
                                                 <embed id="5" class="embed-responsive" />
                                                 <embed id="6" class="embed-responsive" />
                                                 <embed id="7" class="embed-responsive" />
@@ -151,12 +150,13 @@
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <button class="card-header mb-0 btn btn-link collapsed" type="button">
+                                        <button class="card-header mb-0 btn btn-link collapsed" type="button" onclick="closeHelpDiv3()">
                                             Climate
                                             <i class="fa fa-caret-square-o-down fav fa-2x" aria-hidden="true"></i>
                                         </button>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                             <div class="card-body" id="3">
+                                                <div id="centered3" class="top-centered">Please wait until we fetch live data from various APIs . . .</div>
                                                 <embed id="8" class="embed-responsive" />
                                                 <embed id="9" class="embed-responsive" />
                                                 <embed id="10" class="embed-responsive" />
@@ -211,6 +211,9 @@
                 <div class="col-lg-2 text-center">
                     <ul class="list-unstyled">
                         <li>
+                            <a href="./map.html">Explore Map</a>
+                        </li>
+                        <li>
                             <a href="#" onclick="AUS();">Endangered Species</a>
                         </li>
                         <li>
@@ -218,9 +221,6 @@
                         </li>
                         <li>
                             <a href="#" onclick="AUS2('Australia');">Get Involved</a>
-                        </li>
-                        <li>
-                            <a href="./map.html">Explore Map</a>
                         </li>
                     </ul>
                 </div>
@@ -285,7 +285,18 @@
         }
 
         function closeHelpDiv(){
-            document.getElementById('centered').innerHTML='';
+            window.setTimeout("document.getElementById('centered').innerHTML='';", 2500);
+
+        }
+
+        function closeHelpDiv2(){
+            window.setTimeout("document.getElementById('centered2').innerHTML='';", 2500);
+
+        }
+
+        function closeHelpDiv3(){
+            window.setTimeout("document.getElementById('centered3').innerHTML='';", 2500);
+
         }
 
         function myFunction() {
@@ -296,7 +307,7 @@
         @description: Displays the region information, plots the map and the trend graph
         */
 
-            window.setTimeout("closeHelpDiv();", 2500);
+
 
             var region = decodeURIComponent(window.location.search);
 
@@ -432,7 +443,6 @@
                 div2.appendChild(div6);
                 div1.appendChild(div2);
                 row.appendChild(div1);
-
 
                 unique[item["Vernacular name - original"]] = 1;
             }

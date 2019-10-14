@@ -339,8 +339,7 @@ function changeData() {
 
     //alert("test");
     var pages = document.getElementById("pages");
-    
-    //emptySearch();
+
 
     // get the indices of the selected items from the three filters
     var speciesIndex = document.getElementById("species-selected").selectedIndex;
@@ -360,6 +359,7 @@ function updateData() {
     // get the indices of the selected items from the three filters
     var speciesIndex = document.getElementById("species-selected").selectedIndex;
     var stateIndex = document.getElementById("states-selected").selectedIndex;
+    var sortIndex = document.getElementById("sort-selected").selectedIndex;
 
     var category = findCategory(speciesIndex, stateIndex);
     var flag = 0;
@@ -378,7 +378,7 @@ function updateData() {
     }
 
     // sort the array of dictionaries in ascending order of the rank
-    newlist.sort((a, b) => (a["Id"] > b["Id"]) ? 1 : -1);
+    newlist.sort((a, b) => (a["Organisation"] > b["Organisation"]) ? 1 : -1);
     
     var pageNo = 0;
     var lowerLimit = 0;
@@ -408,7 +408,13 @@ function updateData() {
         upperLimit = 20;
     }
 
-    flag = sort(newlist, flag, lowerLimit, upperLimit, row, category);
+    if (sortIndex == 0) {
+        flag = sortLH(newlist, flag, lowerLimit, upperLimit, row, category);
+    }
+
+    if (sortIndex == 1) {
+        flag = sortHL(newlist, flag, lowerLimit, upperLimit, row, category);
+    }
 
     if (flag == 0) {
         var p = document.createElement("p");
@@ -418,7 +424,7 @@ function updateData() {
     
 }
 
-function sort(array, flag, lowerLimit, upperLimit, row, category) {
+function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
     var unique = {};
 
     if (category == "Australia") {
@@ -589,3 +595,176 @@ function sort(array, flag, lowerLimit, upperLimit, row, category) {
 
     return flag;
 }
+
+function sortHL(array, flag, lowerLimit, upperLimit, row, category) {
+    var unique = {};
+
+    if (category == "Australia") {
+
+        for (var i = array.length - 1; i >= 0; i--) {
+            flag = 1;
+
+            if (Object.keys(unique).length >= lowerLimit) {
+                unique = populateSpecies(i, row, unique, array[i]);
+            }
+            if (Object.keys(unique).length == upperLimit) {
+                break;
+            }
+            if (Object.keys(unique).length < lowerLimit) {
+                unique = populateDummyData(i, row, unique, array[i]);
+            }
+        }
+    }
+
+    if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Northern Territory" || category == "Queensland" || category == "South Australia" || category == "Tasmania" || category == "Victoria" || category == "Western Australia") {
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["State - parsed"] == category) {
+                flag = 1;
+                if (Object.keys(unique).length >= lowerLimit) {
+                    unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Plant Trees" || category == "Rescue Fauna" || category == "Spread Awareness" || category == "Attend Conservation Workshops" || category == "Donate" || category == "Citizen Science") {
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == category) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                    unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Plant Trees - Australian Capital Territory" || category == "Plant Trees - New South Wales" || category == "Plant Trees - Northern Territory" || category == "Plant Trees - Queensland" || category == "Plant Trees - South Australia" || category == "Plant Trees - Tasmania" || category == "Plant Trees - Victoria" || category == "Plant Trees - Western Australia") {
+        var name = category.substring(14);
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == "Plant Trees" && array[i]["State - parsed"] == name) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                    unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Rescue Fauna - Australian Capital Territory" || category == "Rescue Fauna - New South Wales" || category == "Rescue Fauna - Northern Territory" || category == "Rescue Fauna - Queensland" || category == "Rescue Fauna - South Australia" || category == "Rescue Fauna - Tasmania" || category == "Rescue Fauna - Victoria" || category == "Rescue Fauna - Western Australia") {
+        var name = category.substring(15);
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == "Rescue Fauna" && array[i]["State - parsed"] == name) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                    unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Spread Awareness - Australian Capital Territory" || category == "Spread Awareness - New South Wales" || category == "Spread Awareness - Northern Territory" || category == "Spread Awareness - Queensland" || category == "Spread Awareness - South Australia" || category == "Spread Awareness - Tasmania" || category == "Spread Awareness - Victoria" || category == "Spread Awareness - Western Australia") {
+        var name = category.substring(19);
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == "Spread Awareness" && array[i]["State - parsed"] == name) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Attend Conservation Workshops - Australian Capital Territory" || category == "Attend Conservation Workshops - New South Wales" || category == "Attend Conservation Workshops - Northern Territory" || category == "Attend Conservation Workshops - Queensland" || category == "Attend Conservation Workshops - South Australia" || category == "Attend Conservation Workshops - Tasmania" || category == "Attend Conservation Workshops - Victoria" || category == "Attend Conservation Workshops - Western Australia") {
+        var name = category.substring(31);
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == "Attend Conservation Workshops" && array[i]["State - parsed"] == name) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Donate - Australian Capital Territory" || category == "Donate - New South Wales" || category == "Donate - Northern Territory" || category == "Donate - Queensland" || category == "Donate - South Australia" || category == "Donate - Tasmania" || category == "Donate - Victoria" || category == "Donate - Western Australia") {
+        var name = category.substring(9);
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == "Donate" && array[i]["State - parsed"] == name) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    if (category == "Citizen Science - Australian Capital Territory" || category == "Citizen Science - New South Wales" || category == "Citizen Science - Northern Territory" || category == "Citizen Science - Queensland" || category == "Citizen Science - South Australia" || category == "Citizen Science - Tasmania" || category == "Citizen Science - Victoria" || category == "Citizen Science - Western Australia") {
+        var name = category.substring(18);
+        for (var i = array.length - 1; i >= 0; i--) {
+            if (array[i]["Type"] == "Citizen Science" && array[i]["State - parsed"] == name) {
+                flag = 1;
+
+                if (Object.keys(unique).length >= lowerLimit) {
+                unique = populateSpecies(i, row, unique, array[i]);
+                }
+                if (Object.keys(unique).length == upperLimit) {
+                    break;
+                }
+                if (Object.keys(unique).length < lowerLimit) {
+                    unique = populateDummyData(i, row, unique, array[i]);
+                }
+            }
+        }
+    }
+
+    return flag;
+}
+

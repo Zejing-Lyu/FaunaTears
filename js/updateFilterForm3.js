@@ -5,6 +5,7 @@ function updateFilterForm(category) {
 @end_date: 13-09-2019
 @description: Update the filter form when loading the page
 */
+
     if (category == "Plant Trees") {
         document.getElementById("species-selected").selectedIndex = "1";
     }

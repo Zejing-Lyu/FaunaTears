@@ -7,12 +7,9 @@
     <meta name="keywords" content="fauna tears, save, endangered species, html, threats, wild life, blue planet, blue planet - wildlife conservation, wildlife conservation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fauna Tears | Species Information</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-          rel="stylesheet">
-    <link rel="shortcut icon" href="logo-icon.png" type="image/x-icon">
+    <title>Fauna Tears | Species Information</title>
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -23,12 +20,6 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/flaticon.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
 
 
@@ -43,6 +34,11 @@
     <script src="js/data.js"></script>
     <script src="js/canvasjs.js"></script>
     <script src="js/navigation.js"></script>
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
 
 </head>
 
@@ -64,16 +60,16 @@
                 <a href="./home.html">Home</a>
             </li>
             <li>
-                <a href="#" onclick="AUS();">Endangered Species</a>
+                <a href="./map.html">Explore Map</a>
+            </li>
+            <li>
+                <a href="#" onclick="AUS();" class="active">Endangered Species</a>
             </li>
             <li>
                 <a href="./index2.html">Threats</a>
             </li>
             <li>
                 <a a href="#" onclick="AUS2('Australia');">Get Involved</a>
-            </li>
-            <li>
-                <a href="./map.html">Map</a>
             </li>
             <li>
                 <a href="./about.html">About Us</a>
@@ -410,6 +406,9 @@
                 <div class="col-lg-2 text-center">
                     <ul class="list-unstyled">
                         <li>
+                            <a href="./map.html">Explore Map</a>
+                        </li>
+                        <li>
                             <a href="#" onclick="AUS();">Endangered Species</a>
                         </li>
                         <li>
@@ -417,9 +416,6 @@
                         </li>
                         <li>
                             <a href="#" onclick="AUS2('Australia');">Get Involved</a>
-                        </li>
-                        <li>
-                            <a href="./map.html">Explore Map</a>
                         </li>
                     </ul>
                 </div>
@@ -482,6 +478,7 @@
                     locations.push([data[i]["Latitude"], data[i]["Longitude"], data[i]["Region"]]);
                 }
             }
+
             var bounds = null;
             var avg_lat = 0;
             var avg_lon = 0;
@@ -550,6 +547,7 @@
                 }
 
             map.setView(new L.LatLng(-25.2744, 133.7751), 3);
+
             var name = species.replace('\'', '_');
             var link = "url('images/" + name + ".jpg')";
             document.getElementById("img1").style.content = link;
@@ -652,14 +650,19 @@
             // create trend chart
             var chart = new CanvasJS.Chart("line-chart", {
                 animationEnabled: true,
-                theme: "light2",
+                //theme: "light2",
                 axisX: {
                     title: "Year"
                 },
                 axisY: {
                     title: "Number of Locations"
                 },
+                toolTip:{
+                   content:"<span style='\"'color: #5F8968;'\"'>{label}</span>: {y}"
+                },
                 data: [{
+                    markerColor: "#5F8968",
+                    lineColor: "#5F8968",
                     type: "line",
                     dataPoints: [
                         { y: y_1968, label: "1968"},

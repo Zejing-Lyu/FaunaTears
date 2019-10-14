@@ -64,16 +64,16 @@
                 <a href="./home.html">Home</a>
             </li>
             <li>
+                <a href="./map.html">Explore Map</a>
+            </li>
+            <li>
                 <a href="#" onclick="AUS();">Endangered Species</a>
             </li>
             <li>
                 <a href="./index2.html">Threats</a>
             </li>
             <li>
-                <a a href="#" onclick="AUS2('Australia');">Get Involved</a>
-            </li>
-            <li>
-                <a href="./map.html">Map</a>
+                <a a href="#" onclick="AUS2('Australia');" class="active">Get Involved</a>
             </li>
             <li>
                 <a href="./about.html">About Us</a>
@@ -143,7 +143,7 @@
                                             <tr>
                                                 <!-- 1st Column Begin -->
                                                 <td>
-                                                    <p>Roles:</p>
+                                                    <p>Activities:</p>
                                                 </td>
                                                 <!-- 1st Column End -->
                                                 <!-- 2nd Column Begin -->
@@ -289,13 +289,13 @@
                 <div class="col-lg-2 text-center">
                     <ul class="list-unstyled">
                         <li>
+                            <a href="./map.html">Explore Map</a>
+                        </li>
+                        <li>
                             <a href="#" onclick="AUS();">Endangered Species</a>
                         </li>
                         <li>
                             <a href="./index2.html">Threats</a>
-                        </li>
-                        <li>
-                            <a href="#" onclick="AUS2('Australia');">Get Involved</a>
                         </li>
                         <li>
                             <a href="./map.html">Explore Map</a>
@@ -444,6 +444,7 @@
                     document.getElementById("img1").style.content = "url(" + data[i]["Logo"] + ")";
                     document.getElementById("info5").innerHTML = data[i]["Type"];
                     document.getElementById("infoDescription").innerHTML = data[i]["Description"];
+                    document.getElementById("infoRoles").innerHTML = data[i]["Roles"];
                     document.getElementById("infoAddress").innerHTML = data[i]["Address"];
                     document.getElementById("info9").innerHTML = data[i]["Phone"];
                     document.getElementById("info10").innerHTML = data[i]["Email"];
@@ -454,14 +455,6 @@
                         var win = window.open(url, '_blank');
                         win.focus();
                     };
-                    var roles = data[i]["Roles"];
-                    roles = roles.split(", ");
-                    var ul = document.getElementById("infoRoles");
-                    for (var i = 0; i < roles.length; i++) {
-                        var li = document.createElement("li");
-                        li.innerHTML = roles[i];
-                        ul.appendChild(li);
-                    }
 
 
 

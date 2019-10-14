@@ -61,6 +61,9 @@
                 <a href="./home.html">Home</a>
             </li>
             <li>
+                <a href="./map.html" class="active">Explore Map</a>
+            </li>
+            <li>
                 <a href="#" onclick="AUS();">Endangered Species</a>
             </li>
             <li>
@@ -68,9 +71,6 @@
             </li>
             <li>
                 <a a href="#" onclick="AUS2('Australia');">Get Involved</a>
-            </li>
-            <li>
-                <a href="./map.html">Map</a>
             </li>
             <li>
                 <a href="./about.html">About Us</a>
@@ -83,8 +83,9 @@
     <!-- Green Border End -->
     <!-- Main Text Section Begin -->
     <section>
-        <embed class="map-details" src="https://www.arcgis.com/apps/Cascade/index.html?appid=31a5a28c075c42028dee2bf843fafd96" />
-        <div id="centered" class="centered">Please wait until we fetch live data from various APIs . . .</div>
+        <embed style="    height: 700px;
+    " class="map-details" src="https://www.arcgis.com/apps/Cascade/index.html?appid=31a5a28c075c42028dee2bf843fafd96" />
+        <div id="message" class="message-centered">Please wait until we fetch live data from various APIs . . .</div>
 
     </section>
     <!-- Main Text Section End -->
@@ -126,6 +127,9 @@
                 <div class="col-lg-2 text-center">
                     <ul class="list-unstyled">
                         <li>
+                            <a href="./map.html">Explore Map</a>
+                        </li>
+                        <li>
                             <a href="#" onclick="AUS();">Endangered Species</a>
                         </li>
                         <li>
@@ -133,9 +137,6 @@
                         </li>
                         <li>
                             <a href="#" onclick="AUS2('Australia');">Get Involved</a>
-                        </li>
-                        <li>
-                            <a href="./map.html">Explore Map</a>
                         </li>
                     </ul>
                 </div>
@@ -178,12 +179,12 @@
     <!-- Js Functions Begin -->
     <script type="text/javascript">
         function myfunction() {
-            window.setTimeout("closeHelpDiv();", 2000);
+            window.setTimeout("closeHelpDiv();", 1500);
 
         }
 
         function closeHelpDiv(){
-            document.getElementById('centered').innerHTML='';
+            document.getElementById('message').innerHTML='';
         }
 
     </script>

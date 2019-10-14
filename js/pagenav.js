@@ -16,10 +16,10 @@ function pageNavigation(category){
             loop = 9
         }
 
-        if (category == "Northern Territory" || category == "South Australia" || category == "Western Australia" || category == "Amphibia" || category == "Reptilia - Queensland" || category == "Reptilia - South Australia" || category == "Reptilia - Victoria" || category == "Reptilia - Western Australia") {
+        if (category == "Northern Territory" || category == "South Australia" || category == "Western Australia" || category == "Amphibia" || category == "Mammalia" || category == "Reptilia - Queensland" || category == "Reptilia - South Australia" || category == "Reptilia - Victoria" || category == "Reptilia - Western Australia") {
             loop = 2
         }
-        if (category == "Queensland" || category == "Victoria" || category == "Mammalia") {
+        if (category == "Queensland" || category == "Victoria") {
             loop = 3
         }
         if (category == "Reptilia") {

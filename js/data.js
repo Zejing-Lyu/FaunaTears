@@ -544,10 +544,10 @@ var data = [
     "Year": 2019,
     "Rate": -98.86363636,
     "Rank": 9,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "/",
+    "Description": "The Alpine Water Skink is a robust skink, with a body length of up to 80mm, that occurs in alpine and montane areas in south-eastern Australia. The dorsal colour is olive-brown, with black stripes along the centre and sides of the back, and a yellow-brown stripe along the dorso-lateral area; these stripes extend from the neck to the base of the tail. The upper flanks are black with a series of cream to yellow spots, becoming blotches on the tail, the lower flanks are white or cream to pale yellow, often with irregular vertical black barring. The underside is pale grey to yellow, with a few grey spots on the throat and occasional small black flecks on the chest and stomach.",
+    "Habitat": "The Alpine water skink is restricted to sphagnum bogs, streamsides and wet heath vegetation.",
+    "Size (cm)": "8",
+    "Colour": "Olive Brown",
     "Region": "Tumbarumba"
   },
   {
@@ -776,10 +776,10 @@ var data = [
     "Year": 2019,
     "Rate": -97.82608696,
     "Rank": 11,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The color scheme of the green-eyed treefrog is to camouflage them from predators. Frogs with bright colors are alerting predators of their poisonous nature.",
+    "Habitat": "The green-eyed treefrog's natural habitats are mainly subtropical, but can also include tropical lowland forests, as well as rivers and freshwater marshes.",
+    "Size (cm)": "7.2",
+    "Colour": "Bright Green",
     "Region": "Tablelands"
   },
   {
@@ -805,10 +805,10 @@ var data = [
     "Year": 2019,
     "Rate": -97.61904762,
     "Rank": 12,
-    "Description": "",
+    "Description": "A small dark brown skink with golden stripes and speckles on its back and sides. Often seen basking on dead trees or rocks.",
     "Habitat": "New South Wales, Victoria",
     "Size (cm)": 6.5,
-    "Colour": "",
+    "Colour": "Dark Brown",
     "Region": "Cardinia"
   },
   {
@@ -1037,10 +1037,10 @@ var data = [
     "Year": 2019,
     "Rate": -97.2972973,
     "Rank": 15,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The fawn-footed melomys Melomys cervinipes (also known as the fawn-footed mosaic tailed rat) is a small to medium sized (40-90g) nocturnal murid rodent native to the Eastern coast of Australia. It is russet-brown to brownish-grey on the dorsal surface, with a white belly and feet. Its name is derived from its characteristic tail scales that are inter-linked like a mosaic tile, compared to other mice and rats that have overlapping tail scales.",
+    "Habitat": "Rainforests, forest edge, grasslands and cane fields.",
+    "Size (cm)": "13",
+    "Colour": "Russet-Brown, Brownish-Grey",
     "Region": "Cairns"
   },
   {
@@ -1327,10 +1327,10 @@ var data = [
     "Year": 2019,
     "Rate": -94.11764706,
     "Rank": 22,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The plains rat has a stocky build of around 65 grams with long ears and a rounded muzzle and is grey to brown along its back with white or cream lining its underbelly. Its combined head and body length is usually between 90 and 145 millimetres and its tail is roughly as long as its body.",
+    "Habitat": "The Plains Rat is primarily found in gibber (stone-covered) plains and mid slopes with boulders, small stones and gilgais (water soaks, depressions). In years of very good rainfall, this species occur on adjoining sandy plains.",
+    "Size (cm)": "14.5",
+    "Colour": "Grey, Brown",
     "Region": "Unincorporated South Australia"
   },
   {
@@ -1967,7 +1967,7 @@ var data = [
     "Rank": 31,
     "Description": "Menetia is a genus of skinks, lizards in the family Scincidae. Member species of the genus Menetia are endemic to Australia. They are ground-dwellers and live in open forests and open grasslands.",
     "Habitat": "disturbed areas such as urban backyards",
-    "Size (cm)": "",
+    "Size (cm)": "14",
     "Colour": "Grey, Brown",
     "Region": "Mildura"
   },
@@ -1996,7 +1996,7 @@ var data = [
     "Rank": 31,
     "Description": "Menetia is a genus of skinks, lizards in the family Scincidae. Member species of the genus Menetia are endemic to Australia. They are ground-dwellers and live in open forests and open grasslands.",
     "Habitat": "disturbed areas such as urban backyards",
-    "Size (cm)": "",
+    "Size (cm)": "14",
     "Colour": "Grey, Brown",
     "Region": "Stirling"
   },
@@ -2023,10 +2023,10 @@ var data = [
     "Year": 2019,
     "Rate": -93.33333333,
     "Rank": 32,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The Little Whip Snake is a small, slender snake, reaching 45 cm in length. Its most conspicuous feature is the black hour-glass-shaped patch from the back of the nape to between the eyes. Some specimens also have a black snout-band.",
+    "Habitat": "Grassland, Woodland",
+    "Size (cm)": "45",
+    "Colour": "Black, Brown",
     "Region": "Onkaparinga"
   },
   {
@@ -2110,10 +2110,10 @@ var data = [
     "Year": 2019,
     "Rate": -93.10344828,
     "Rank": 34,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Brown to bronze in colour with a tendency towards metallic rose or orange on their underside. Occasionally exhibiting a darker longitudinal stripe on its back and prominent mid lateral stripe. Head indistinct from body and scales behind the eyes fused to form a shield. Usually a band of six rows of wide rough scales across the middle of the back. Head and body length of 6.6 cm.",
+    "Habitat": "This species is found in upland humid sclerophyll forest and woodland, preferring to shelter in clearings, in rock outcrops, tussock grasses, logs and fallen trees.",
+    "Size (cm)": "5",
+    "Colour": "Brown, Bronze",
     "Region": "Campaspe"
   },
   {
@@ -2139,10 +2139,10 @@ var data = [
     "Year": 2019,
     "Rate": -93.10344828,
     "Rank": 34,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Brown to bronze in colour with a tendency towards metallic rose or orange on their underside. Occasionally exhibiting a darker longitudinal stripe on its back and prominent mid lateral stripe. Head indistinct from body and scales behind the eyes fused to form a shield. Usually a band of six rows of wide rough scales across the middle of the back. Head and body length of 6.6 cm.",
+    "Habitat": "This species is found in upland humid sclerophyll forest and woodland, preferring to shelter in clearings, in rock outcrops, tussock grasses, logs and fallen trees.",
+    "Size (cm)": "5",
+    "Colour": "Brown, Bronze",
     "Region": "East Gippsland"
   },
   {
@@ -3126,7 +3126,7 @@ var data = [
     "Rate": -91.42857143,
     "Rank": 45,
     "Description": "Anepischetosia maccoyi, also known as the highlands forest skink or McCoy's skink, is a skink in the (family Scincidae). It is monotypic in the genus Anepischetosia. It is endemic to Australia.",
-    "Habitat": "",
+    "Habitat": "Wet sclerophyll forest and temperate rainforests. Found mostly in moist gullies or damp areas under rocks, logs or leaf litter.",
     "Size (cm)": 5,
     "Colour": "brown",
     "Region": "Cardinia"
@@ -3155,7 +3155,7 @@ var data = [
     "Rate": -91.42857143,
     "Rank": 45,
     "Description": "Anepischetosia maccoyi, also known as the highlands forest skink or McCoy's skink, is a skink in the (family Scincidae). It is monotypic in the genus Anepischetosia. It is endemic to Australia.",
-    "Habitat": "",
+    "Habitat": "Wet sclerophyll forest and temperate rainforests. Found mostly in moist gullies or damp areas under rocks, logs or leaf litter.",
     "Size (cm)": 5,
     "Colour": "brown",
     "Region": "South Gippsland"
@@ -3184,7 +3184,7 @@ var data = [
     "Rate": -91.42857143,
     "Rank": 45,
     "Description": "Anepischetosia maccoyi, also known as the highlands forest skink or McCoy's skink, is a skink in the (family Scincidae). It is monotypic in the genus Anepischetosia. It is endemic to Australia.",
-    "Habitat": "",
+    "Habitat": "Wet sclerophyll forest and temperate rainforests. Found mostly in moist gullies or damp areas under rocks, logs or leaf litter.",
     "Size (cm)": 5,
     "Colour": "brown",
     "Region": "Strathbogie"
@@ -3213,7 +3213,7 @@ var data = [
     "Rate": -91.42857143,
     "Rank": 45,
     "Description": "Anepischetosia maccoyi, also known as the highlands forest skink or McCoy's skink, is a skink in the (family Scincidae). It is monotypic in the genus Anepischetosia. It is endemic to Australia.",
-    "Habitat": "",
+    "Habitat": "Wet sclerophyll forest and temperate rainforests. Found mostly in moist gullies or damp areas under rocks, logs or leaf litter.",
     "Size (cm)": 5,
     "Colour": "brown",
     "Region": "South Gippsland"
@@ -3242,7 +3242,7 @@ var data = [
     "Rate": -91.42857143,
     "Rank": 45,
     "Description": "Anepischetosia maccoyi, also known as the highlands forest skink or McCoy's skink, is a skink in the (family Scincidae). It is monotypic in the genus Anepischetosia. It is endemic to Australia.",
-    "Habitat": "",
+    "Habitat": "Wet sclerophyll forest and temperate rainforests. Found mostly in moist gullies or damp areas under rocks, logs or leaf litter.",
     "Size (cm)": 5,
     "Colour": "brown",
     "Region": "Strathbogie"
@@ -3271,7 +3271,7 @@ var data = [
     "Rate": -91.42857143,
     "Rank": 45,
     "Description": "Anepischetosia maccoyi, also known as the highlands forest skink or McCoy's skink, is a skink in the (family Scincidae). It is monotypic in the genus Anepischetosia. It is endemic to Australia.",
-    "Habitat": "",
+    "Habitat": "Wet sclerophyll forest and temperate rainforests. Found mostly in moist gullies or damp areas under rocks, logs or leaf litter.",
     "Size (cm)": 5,
     "Colour": "brown",
     "Region": "Surf Coast"
@@ -3909,7 +3909,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -3938,7 +3938,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -3967,7 +3967,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Salisbury"
@@ -3996,7 +3996,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -4025,7 +4025,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -4054,7 +4054,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Salisbury"
@@ -4083,7 +4083,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -4112,7 +4112,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -4141,7 +4141,7 @@ var data = [
     "Rate": -87.83783784,
     "Rank": 53,
     "Description": "The three-toed earless skink, Hemiergis decresiensis, is a viviparous earless skink from southeastern Australia. Hemiergis decresiensis is a thin, smooth-scaled lizard with short legs, a movable, transparent lower eyelid and no visible ear opening. It is a burrowing species with only three small toes on each limb. The upper surface is a rich brown colour with a few dark brown stripes or spots. Its sides are greyish brown with darker spots and there is a narrow dark brown line along the side of the head and through the eye. It lays several oval-shaped eggs that hatch only a few days later.",
-    "Habitat": "",
+    "Habitat": "Found in damp areas, in moist litter, under rocks and fallen timber.",
     "Size (cm)": 6,
     "Colour": "brown",
     "Region": "Port Adelaide Enfield"
@@ -4546,8 +4546,8 @@ var data = [
     "Year": 2019,
     "Rate": -85.71428571,
     "Rank": 57,
-    "Description": "",
-    "Habitat": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species is found in open eucalypt forest and woodlands, often with grass tussocks. The subpopulations can be found in slightly disturbed habitat.",
     "Size (cm)": 5.3,
     "Colour": "orange, grey",
     "Region": "Cairns"
@@ -4575,10 +4575,10 @@ var data = [
     "Year": 2019,
     "Rate": -85.71428571,
     "Rank": 58,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": 9.5,
-    "Colour": "",
+    "Description": "A medium-size skink with short but strong limbs and narrow-banded colouration - can burrow rapidly into sand (snout-vent length to 8 cm)",
+    "Habitat": "Found in a wide variety of arid or drier habitats, usually on sandy or loamy soils. It is suggested that a layer of sand is always present at sites with this species.",
+    "Size (cm)": 8,
+    "Colour": "Dark Brown, Bronze",
     "Region": "Unincorporated South Australia"
   },
   {
@@ -4778,10 +4778,10 @@ var data = [
     "Year": 2019,
     "Rate": -83.33333333,
     "Rank": 61,
-    "Description": "",
+    "Description": "The New Holland frog is a large species, reaching a maximum size of 100 mm. It is normally pale grey, brown, or yellowish, occasionally with darker blotches. The belly is white and the throat is speckled.",
     "Habitat": "Occurs throughout almost all of Queensland, except for the far western areas, and into the north-eastern corner of New South Wales.The extent of occurrence of the species is approximately 1175700 km2.Reared in USA as vivarium species.",
-    "Size (cm)": "",
-    "Colour": "",
+    "Size (cm)": "10",
+    "Colour": "Pale Grey, Brown, Yellow",
     "Region": "Etheridge"
   },
   {
@@ -4836,10 +4836,10 @@ var data = [
     "Year": 2019,
     "Rate": -83.33333333,
     "Rank": 63,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The Bardick is a short, stout snake with a broad head, distinct from the neck. It has olive grey, brown to rich reddish brown non-glossy scales. Lips and head may be scattered with white flecks. Average length is 40cm, though can reach a total length of 70cm.",
+    "Habitat": "Inhabits hummock grasslands and mallee areas on sandy or loamy soils and is usually associated with run-off slopes and drainage from local rises. The species is particularly common in areas of spinifex.",
+    "Size (cm)": "70",
+    "Colour": "Olive-Green, Reddish-Brown, Dark Greyish-Brown, Black.",
     "Region": "Coolgardie"
   },
   {
@@ -4952,10 +4952,10 @@ var data = [
     "Year": 2019,
     "Rate": -83.33333333,
     "Rank": 65,
-    "Description": "",
-    "Habitat": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species inhabits most habitats within its range, including coastal heathlands and shrublands, often in association with mallee and spinifex. It also occurs in open forest, including chenopod forest. It may be absent from wet caree forest based on the known distribution records. It is only moderately tolerant of urbanization; it will be found in remnant vegetation in parks, and can persist in small areas, but is not found in urban gardens.",
     "Size (cm)": 5.5,
-    "Colour": "",
+    "Colour": "Grey, Brown",
     "Region": "Onkaparinga"
   },
   {
@@ -4981,10 +4981,10 @@ var data = [
     "Year": 2019,
     "Rate": -83.33333333,
     "Rank": 65,
-    "Description": "",
-    "Habitat": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species inhabits most habitats within its range, including coastal heathlands and shrublands, often in association with mallee and spinifex. It also occurs in open forest, including chenopod forest. It may be absent from wet caree forest based on the known distribution records. It is only moderately tolerant of urbanization; it will be found in remnant vegetation in parks, and can persist in small areas, but is not found in urban gardens.",
     "Size (cm)": 5.5,
-    "Colour": "",
+    "Colour": "Grey, Brown",
     "Region": "Horsham"
   },
   {
@@ -5010,11 +5010,10 @@ var data = [
     "Year": 2019,
     "Rate": -83.33333333,
     "Rank": 65,
-    "Description": "",
-    "Habitat": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species inhabits most habitats within its range, including coastal heathlands and shrublands, often in association with mallee and spinifex. It also occurs in open forest, including chenopod forest. It may be absent from wet caree forest based on the known distribution records. It is only moderately tolerant of urbanization; it will be found in remnant vegetation in parks, and can persist in small areas, but is not found in urban gardens.",
     "Size (cm)": 5.5,
-    "Colour": "",
-    "Region": "Ravensthorpe"
+    "Colour": "Grey, Brown",    "Region": "Ravensthorpe"
   },
   {
     "1968": 24,
@@ -5039,11 +5038,10 @@ var data = [
     "Year": 2019,
     "Rate": -83.33333333,
     "Rank": 65,
-    "Description": "",
-    "Habitat": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species inhabits most habitats within its range, including coastal heathlands and shrublands, often in association with mallee and spinifex. It also occurs in open forest, including chenopod forest. It may be absent from wet caree forest based on the known distribution records. It is only moderately tolerant of urbanization; it will be found in remnant vegetation in parks, and can persist in small areas, but is not found in urban gardens.",
     "Size (cm)": 5.5,
-    "Colour": "",
-    "Region": "Ravensthorpe"
+    "Colour": "Grey, Brown",    "Region": "Ravensthorpe"
   },
   {
     "1968": 50,
@@ -5505,7 +5503,7 @@ var data = [
     "Rank": 69,
     "Description": "The red-tailed phascogale is smaller and browner than its close relative the brush-tailed phascogale. As in the brush-tailed phascogale, male red-tailed phascogales die following their first mating as a result of stress-related diseases. Males rarely live past 11.5 months, although females can live to three years old. Captive males can also survive up to three years. An arboreal species, the red-tailed phascogale has a varied diet, and can feed on insects and spiders, but also small birds and small mammals, notably the house mouse (Mus musculus), which has become ubiquitous in the landscape since its introduction by Europeans; it does not drink as its water is metabolised through its food.",
     "Habitat": "The red-tailed phascogale was formerly widespread throughout central and western Australia but is now restricted to the southern Western Australian wheatbelt, and is classified as near threatenedby the IUCN Red List and endangered by the Australian EPBC Act. It is found in dense and tall climax vegetation, and appears to prefer those containing the Wandoo (Eucalyptus wandoo) and the Rock Sheoak (Allocasuarina huegeliana), as it has developed a resistance to the fluoroacetate the plants produce that is lethal to livestock. Most native animals have a resistance to this fluoracetate, but introduced species, like the red fox (Vulpes vulpes), do not, so it has been suggested that the red-tailed phascogale's survival in these areas could be attributed to this chemical. The species was reintroduced to the Wadderin Sanctuary in the central wheatbelt of Western Australia in 2009.",
-    "Size (cm)": "",
+    "Size (cm)": "11",
     "Colour": "Brown",
     "Region": "Quairading"
   },
@@ -5532,10 +5530,10 @@ var data = [
     "Year": 2019,
     "Rate": -80,
     "Rank": 70,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species occurs in heath, forest and rocky outcrops, often near permanent water. Animals occupy shallow burrows under exfoliated granite, or other loose rock. Several individuals are often present under the same rock. It is also found under decaying logs and bark and in soil under grass tussocks.",
+    "Size (cm)": "5.5",
+    "Colour": "Chocolate Brown, Reddish Brown",
     "Region": "Busselton"
   },
   {
@@ -5735,10 +5733,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "Latrobe"
   },
   {
@@ -5764,10 +5762,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "Latrobe"
   },
   {
@@ -5793,10 +5791,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "Baw Baw"
   },
   {
@@ -5822,10 +5820,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "Northern Grampians"
   },
   {
@@ -5851,10 +5849,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "Northern Grampians"
   },
   {
@@ -5880,10 +5878,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "East Gippsland"
   },
   {
@@ -5909,10 +5907,10 @@ var data = [
     "Year": 2019,
     "Rate": -77.41935484,
     "Rank": 74,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Egernia saxatilis. Egernia saxatilis, commonly known as the black rock-skink or black crevice-skink, is a species of moderately large to large skink, a lizard in the family Scincidae. The species is locally abundant, but distribution is severely fragmented and number of adults appears to be decreasing.",
+    "Habitat": "Occurs in a range of forest and woodland environments but is found only in dissociation with rock outcrops, scree and piles of boulders. Individual shelter within deep cracks within these rock outcrops. In the ACT is mainly associated with granite outcrops in Namadgi National Park.",
+    "Size (cm)": "13.5",
+    "Colour": "Black",
     "Region": "Northern Grampians"
   },
   {
@@ -6257,10 +6255,10 @@ var data = [
     "Year": 2019,
     "Rate": -75,
     "Rank": 77,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Prong-snouted blind snake. The prong-snouted blind snake is a species of non-venomous worm-like burrowing snakes belonging to the Typhlopidae family. It is endemic to central southern, continental Australia.",
+    "Habitat": "This fossorial species prefers the sub humid to arid areas of southern Australia. It is common in areas of red sand and spinifex, through to Eucalypt woodlands.",
+    "Size (cm)": "30",
+    "Colour": "Brown, Black",
     "Region": "Murray Bridge"
   },
   {
@@ -6288,7 +6286,7 @@ var data = [
     "Rank": 78,
     "Description": "The western worm lerista (Lerista praepedita) is a species of skink native to coastal areas of southwest and midwest Western Australia. It is very thin, with no front legs and extremely small, stumpy back legs. It is a pale grey or brown, with a prominent, broad, dark brown stripe along each side, and a series of small brown dashes along its back",
     "Habitat": "It is found amongst heath and woodlands on coastal dunes",
-    "Size (cm)": "",
+    "Size (cm)": "10.5",
     "Colour": "Grey, Brown",
     "Region": "Wanneroo"
   },
@@ -6431,10 +6429,10 @@ var data = [
     "Year": 2019,
     "Rate": -75,
     "Rank": 81,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The grassland mosaic-tailed rat, or grassland melomys, is a species of rodent in the family Muridae. It is found in Australia and Papua New Guinea. In Australia it is found along the northern coast from Kimberley to New South Wales.",
+    "Habitat": "It is present in areas of tall grassland, sedgefields, open woodland, grassy glades within tropical moist forest, swamps, mangroves and vine thickets. It is a common pest of sugarcane fields. It breeds throughout the year with litters of up to five young.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Darwin"
   },
   {
@@ -6460,11 +6458,10 @@ var data = [
     "Year": 2019,
     "Rate": -75,
     "Rank": 81,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
-    "Region": "West Arnhem"
+    "Description": "The grassland mosaic-tailed rat, or grassland melomys, is a species of rodent in the family Muridae. It is found in Australia and Papua New Guinea. In Australia it is found along the northern coast from Kimberley to New South Wales.",
+    "Habitat": "It is present in areas of tall grassland, sedgefields, open woodland, grassy glades within tropical moist forest, swamps, mangroves and vine thickets. It is a common pest of sugarcane fields. It breeds throughout the year with litters of up to five young.",
+    "Size (cm)": "10",
+    "Colour": "Brown",    "Region": "West Arnhem"
   },
   {
     "1968": 12,
@@ -6489,11 +6486,10 @@ var data = [
     "Year": 2019,
     "Rate": -75,
     "Rank": 81,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
-    "Region": "Roper Gulf"
+    "Description": "The grassland mosaic-tailed rat, or grassland melomys, is a species of rodent in the family Muridae. It is found in Australia and Papua New Guinea. In Australia it is found along the northern coast from Kimberley to New South Wales.",
+    "Habitat": "It is present in areas of tall grassland, sedgefields, open woodland, grassy glades within tropical moist forest, swamps, mangroves and vine thickets. It is a common pest of sugarcane fields. It breeds throughout the year with litters of up to five young.",
+    "Size (cm)": "10",
+    "Colour": "Brown",    "Region": "Roper Gulf"
   },
   {
     "1968": 33,
@@ -6780,9 +6776,9 @@ var data = [
     "Rate": -71.42857143,
     "Rank": 83,
     "Description": "The southern spotted velvet gecko (Oedura tryoni) is a gecko endemic to Australia",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Habitat": "Tropical woodland – usually in rocky areas.",
+    "Size (cm)": "12",
+    "Colour": "Brown",
     "Region": "Etheridge"
   },
   {
@@ -6809,9 +6805,9 @@ var data = [
     "Rate": -71.42857143,
     "Rank": 83,
     "Description": "The southern spotted velvet gecko (Oedura tryoni) is a gecko endemic to Australia",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Habitat": "Tropical woodland – usually in rocky areas.",
+    "Size (cm)": "12",
+    "Colour": "Brown",
     "Region": "Carpentaria"
   },
   {
@@ -6837,10 +6833,10 @@ var data = [
     "Year": 2019,
     "Rate": -71.42857143,
     "Rank": 84,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The western brush wallaby, also known as the black-gloved wallaby, is a species of wallaby found in the southwest coastal region of Western Australia. The wallaby's main threat is predation by the introduced red fox. ",
+    "Habitat": "Western Brush Wallabies inhabit a wide range of habitats, including open forest and woodland, mallee, heathland, low open grasses, and scrubby thickets, but favour open, grassy areas and are absent in Karri Eucalyptus diversicolor forests where there is a dense understorey.",
+    "Size (cm)": "97",
+    "Colour": "Grey",
     "Region": "Boyup Brook"
   },
   {
@@ -6866,10 +6862,10 @@ var data = [
     "Year": 2019,
     "Rate": -71.42857143,
     "Rank": 84,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The western brush wallaby, also known as the black-gloved wallaby, is a species of wallaby found in the southwest coastal region of Western Australia. The wallaby's main threat is predation by the introduced red fox. ",
+    "Habitat": "Western Brush Wallabies inhabit a wide range of habitats, including open forest and woodland, mallee, heathland, low open grasses, and scrubby thickets, but favour open, grassy areas and are absent in Karri Eucalyptus diversicolor forests where there is a dense understorey.",
+    "Size (cm)": "97",
+    "Colour": "Grey",
     "Region": "Gnowangerup"
   },
   {
@@ -6895,10 +6891,10 @@ var data = [
     "Year": 2019,
     "Rate": -71.42857143,
     "Rank": 84,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The western brush wallaby, also known as the black-gloved wallaby, is a species of wallaby found in the southwest coastal region of Western Australia. The wallaby's main threat is predation by the introduced red fox. ",
+    "Habitat": "Western Brush Wallabies inhabit a wide range of habitats, including open forest and woodland, mallee, heathland, low open grasses, and scrubby thickets, but favour open, grassy areas and are absent in Karri Eucalyptus diversicolor forests where there is a dense understorey.",
+    "Size (cm)": "97",
+    "Colour": "Grey",
     "Region": "Boyup Brook"
   },
   {
@@ -6924,10 +6920,10 @@ var data = [
     "Year": 2019,
     "Rate": -71.42857143,
     "Rank": 84,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The western brush wallaby, also known as the black-gloved wallaby, is a species of wallaby found in the southwest coastal region of Western Australia. The wallaby's main threat is predation by the introduced red fox. ",
+    "Habitat": "Western Brush Wallabies inhabit a wide range of habitats, including open forest and woodland, mallee, heathland, low open grasses, and scrubby thickets, but favour open, grassy areas and are absent in Karri Eucalyptus diversicolor forests where there is a dense understorey.",
+    "Size (cm)": "97",
+    "Colour": "Grey",
     "Region": "Chittering"
   },
   {
@@ -7359,10 +7355,10 @@ var data = [
     "Year": 2019,
     "Rate": -66.66666667,
     "Rank": 87,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "This dragon is widespread, usually perched on low shrubs and lower limbs from which positions it can drop onto any suitable insects observed on the ground. The body is brown to rusty-brown with mottles or flecks of a darker brown. The head is usually held up when disturbed.",
+    "Habitat": "Woodlands, Melaleuca swamps, coastal dunes and other seasonally dry forests.",
+    "Size (cm)": "15",
+    "Colour": "Brown",
     "Region": "Gympie"
   },
   {
@@ -7388,10 +7384,10 @@ var data = [
     "Year": 2019,
     "Rate": -66.66666667,
     "Rank": 88,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "This species is found in dry scleophyll forests and woodlands. It can be found in disturbed habitats, including gardens.",
+    "Size (cm)": "3.9",
+    "Colour": "Oilve-Brown",
     "Region": "Whitsunday"
   },
   {
@@ -7417,10 +7413,10 @@ var data = [
     "Year": 2019,
     "Rate": -66.66666667,
     "Rank": 89,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Prickly forest skinks are dark brown in colour, with a rough rather than a shiny skin like common garden skinks. After moulting, the striped orange of the skin on their legs is much more visible - most of the time they are too muddy for the stripes to be obvious!",
+    "Habitat": "This viviparous species is found in rainforests, where it is commonly found in cool, damp conditions. It favours areas beneath heavily decomposed logs, and can persist in small forest patches.",
+    "Size (cm)": "8.5",
+    "Colour": "Dark Brown",
     "Region": "Tablelands"
   },
   {
@@ -7533,10 +7529,10 @@ var data = [
     "Year": 2019,
     "Rate": -66.66666667,
     "Rank": 93,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Their body is moderately stocky in form, with smooth scales, functional and strong limbs that each have five digits. Their total length, from head to tail, is around 190 millimetres, the snout to vent length is 70 mm. Both the sexes have a red patch at their throat which varies in its intensity of colour, becoming more noticeable during the breeding season.",
+    "Habitat": "This species inhabits damp forest areas and wetland margins, and ephemeral wetlands, often with thick vegetation. This species is oviparous. Animals are only found in areas with some natural vegetation.",
+    "Size (cm)": "19",
+    "Colour": "Grey, Brown",
     "Region": "Stirling"
   },
   {
@@ -8142,10 +8138,10 @@ var data = [
     "Year": 2019,
     "Rate": -64.70588235,
     "Rank": 99,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "In Australia this species inhabits dry sclerophyll, savanna and coastal woodlands, monsoon scrub and heathland, as well as rock outcrops, grassy coastal dunes, urban and areas of regeneration.  It is a diurnal terrestrial species that forages among low vegetation and ground litter for insects.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Isaac"
   },
   {
@@ -8171,10 +8167,10 @@ var data = [
     "Year": 2019,
     "Rate": -64.70588235,
     "Rank": 99,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "In Australia this species inhabits dry sclerophyll, savanna and coastal woodlands, monsoon scrub and heathland, as well as rock outcrops, grassy coastal dunes, urban and areas of regeneration.  It is a diurnal terrestrial species that forages among low vegetation and ground litter for insects.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Mackay"
   },
   {
@@ -8200,10 +8196,10 @@ var data = [
     "Year": 2019,
     "Rate": -64.70588235,
     "Rank": 99,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "In Australia this species inhabits dry sclerophyll, savanna and coastal woodlands, monsoon scrub and heathland, as well as rock outcrops, grassy coastal dunes, urban and areas of regeneration.  It is a diurnal terrestrial species that forages among low vegetation and ground litter for insects.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Isaac"
   },
   {
@@ -8229,10 +8225,10 @@ var data = [
     "Year": 2019,
     "Rate": -64.70588235,
     "Rank": 99,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "In Australia this species inhabits dry sclerophyll, savanna and coastal woodlands, monsoon scrub and heathland, as well as rock outcrops, grassy coastal dunes, urban and areas of regeneration.  It is a diurnal terrestrial species that forages among low vegetation and ground litter for insects.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Mackay"
   },
   {
@@ -8258,10 +8254,10 @@ var data = [
     "Year": 2019,
     "Rate": -64.70588235,
     "Rank": 99,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "In Australia this species inhabits dry sclerophyll, savanna and coastal woodlands, monsoon scrub and heathland, as well as rock outcrops, grassy coastal dunes, urban and areas of regeneration.  It is a diurnal terrestrial species that forages among low vegetation and ground litter for insects.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Whyalla"
   },
   {
@@ -8287,10 +8283,10 @@ var data = [
     "Year": 2019,
     "Rate": -64.70588235,
     "Rank": 99,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "No description available yet.",
+    "Habitat": "In Australia this species inhabits dry sclerophyll, savanna and coastal woodlands, monsoon scrub and heathland, as well as rock outcrops, grassy coastal dunes, urban and areas of regeneration.  It is a diurnal terrestrial species that forages among low vegetation and ground litter for insects.",
+    "Size (cm)": "10",
+    "Colour": "Brown",
     "Region": "Mid Murray"
   },
   {
@@ -9273,10 +9269,10 @@ var data = [
     "Year": 2019,
     "Rate": -60,
     "Rank": 106,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "It has been described as having 'features reminiscent of Darth Vader.' From head to tail, it is approximately 98 mm (3.9 in) long. Its head and body is 80–90 mm (3.1–3.5 in) long, and its tail is 35–45 mm (1.4–1.8 in) long. Its forearm is 46–52 mm (1.8–2.0 in) long. It weighs 20–30 g (0.71–1.06 oz).",
+    "Habitat": "They prefer rainforest, forest, mangroves, woodland, arid shrublands, agricultural and urban areas.",
+    "Size (cm)": "45",
+    "Colour": "Light-Grey Brown, Brown, Black, Reddish-Brown",
     "Region": "Tablelands"
   },
   {
@@ -9302,11 +9298,10 @@ var data = [
     "Year": 2019,
     "Rate": -60,
     "Rank": 106,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
-    "Region": "Tablelands"
+    "Description": "It has been described as having 'features reminiscent of Darth Vader.' From head to tail, it is approximately 98 mm (3.9 in) long. Its head and body is 80–90 mm (3.1–3.5 in) long, and its tail is 35–45 mm (1.4–1.8 in) long. Its forearm is 46–52 mm (1.8–2.0 in) long. It weighs 20–30 g (0.71–1.06 oz).",
+    "Habitat": "They prefer rainforest, forest, mangroves, woodland, arid shrublands, agricultural and urban areas.",
+    "Size (cm)": "45",
+    "Colour": "Light-Grey Brown, Brown, Black, Reddish-Brown",    "Region": "Tablelands"
   },
   {
     "1968": 5,
@@ -9389,10 +9384,10 @@ var data = [
     "Year": 2019,
     "Rate": -60,
     "Rank": 108,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The Eastern Lined Earless Dragon is a small dragon lizard measuring up to 21cm in length. It is well camouflaged and each individual has unique back pattern markings. It eats mainly spiders and insects.",
+    "Habitat": "Found in a short burrow under a rock in sparse native grassland studded with rocks.",
+    "Size (cm)": "21",
+    "Colour": "Brown",
     "Region": "Light"
   },
   {
@@ -9418,11 +9413,10 @@ var data = [
     "Year": 2019,
     "Rate": -60,
     "Rank": 108,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
-    "Region": "Light"
+    "Description": "The Eastern Lined Earless Dragon is a small dragon lizard measuring up to 21cm in length. It is well camouflaged and each individual has unique back pattern markings. It eats mainly spiders and insects.",
+    "Habitat": "Found in a short burrow under a rock in sparse native grassland studded with rocks.",
+    "Size (cm)": "21",
+    "Colour": "Brown",    "Region": "Light"
   },
   {
     "1968": 15,
@@ -9737,10 +9731,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Kangaroo Island"
   },
   {
@@ -9766,10 +9760,11 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
+
     "Region": "Kangaroo Island"
   },
   {
@@ -9795,10 +9790,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Kangaroo Island"
   },
   {
@@ -9824,10 +9819,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Adelaide Hills"
   },
   {
@@ -9853,10 +9848,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Adelaide Hills"
   },
   {
@@ -9882,10 +9877,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Swan"
   },
   {
@@ -9911,10 +9906,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Manjimup"
   },
   {
@@ -9940,10 +9935,10 @@ var data = [
     "Year": 2019,
     "Rate": -52.94117647,
     "Rank": 111,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The tammar wallaby exhibits significant sexual dimorphism, with the maximum recorded weight in males being 9.1 kg (20 lb) and maximum recorded weight in females is 6.9 kg (15 lb). The body length is 59 to 68 cm (23–27 in) in males and 52 to 63 cm (20–25 in) in females.",
+    "Habitat": "Tammar use dense vegetation for shelter and open grassy areas, including improved pastures around remnant vegetation, for feeding. Each individual has a defined home range, which overlaps with those of other animals. They are herbivorous, mostly eating grasses, but also grazing on shrubs. On the mainland, occasional hot fires are needed to regenerate thickets used for shelter.",
+    "Size (cm)": "69",
+    "Colour": "Grey Brown",
     "Region": "Cuballing"
   },
   {
@@ -10259,10 +10254,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 113,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "The brush-tailed rabbit-rat is a moderately large (about 150 g) partly arboreal rat, with long brush-tipped tail (with the distal third either black or white), and long ears. The fur colour is relatively uniformly brown above, and cream below.",
+    "Habitat": "Brush-tailed Rabbit-rats shelter during the day in tree hollows (particularly of rough-barked species, and in larger trees) and hollow logs, and may also occasionally shelter in Pandanus canopies.",
+    "Size (cm)": "19",
+    "Colour": "Brown, Cream, Black",
     "Region": "Darwin"
   },
   {
@@ -10520,10 +10515,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 122,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "This is widely referred to as the Slender Mallee Blue-tongue Lizard. It is a medium-sized skink, with the snout-vent length about 13 centimetres and the tail almost as long again as the body The body is generally brown to olive with the ventral surface generally paler, while the tail has a yellow or orange tinge and the head is slightly darker than the body. Iris is orange with a black pupil, the mouth lining pink and the tongue blue-black.",
+    "Habitat": "This species can be found in various types of grassland and shrubland, with differing soil types including sandy and limestone-based soils. It is particularly common in sand dunes and can be found in populated areas.",
+    "Size (cm)": "12",
+    "Colour": "Brown",
     "Region": "Wanneroo"
   },
   {
@@ -10665,10 +10660,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 125,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Keels on dorsal scales run parallel to midline.",
+    "Habitat": "They occur in a variety of habitat, including sand dunes and arid regions, but frequently near watercourses.",
+    "Size (cm)": "13",
+    "Colour": "Grey, Reddish Brown, Black",
     "Region": "Litchfield"
   },
   {
@@ -10694,11 +10689,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 125,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
-    "Region": "Roper Gulf"
+    "Description": "Keels on dorsal scales run parallel to midline.",
+    "Habitat": "They occur in a variety of habitat, including sand dunes and arid regions, but frequently near watercourses.",
+    "Size (cm)": "13",
+    "Colour": "Grey, Reddish Brown, Black",    "Region": "Roper Gulf"
   },
   {
     "1968": 6,
@@ -10723,10 +10717,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 125,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Keels on dorsal scales run parallel to midline.",
+    "Habitat": "They occur in a variety of habitat, including sand dunes and arid regions, but frequently near watercourses.",
+    "Size (cm)": "13",
+    "Colour": "Grey, Reddish Brown, Black",
     "Region": "Palmerston"
   },
   {
@@ -10752,10 +10746,11 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 126,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Upper secondary temporal overlaps lower; transversely enlarged nuchals 0-4, mode 2; subdigital lamellae fourth toe 22-27; nuchal area often with dark midline streak.",
+    "Habitat": "It lives mostly in wet habitats such as rainforests and wet sclerophyll forests.",
+    "Size (cm)": "16",
+    "Colour": "Brown",
+
     "Region": "Gladstone"
   },
   {
@@ -10781,10 +10776,11 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 126,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Upper secondary temporal overlaps lower; transversely enlarged nuchals 0-4, mode 2; subdigital lamellae fourth toe 22-27; nuchal area often with dark midline streak.",
+    "Habitat": "It lives mostly in wet habitats such as rainforests and wet sclerophyll forests.",
+    "Size (cm)": "16",
+    "Colour": "Brown",
+
     "Region": "Sunshine Coast"
   },
   {
@@ -10810,10 +10806,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 126,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Upper secondary temporal overlaps lower; transversely enlarged nuchals 0-4, mode 2; subdigital lamellae fourth toe 22-27; nuchal area often with dark midline streak.",
+    "Habitat": "It lives mostly in wet habitats such as rainforests and wet sclerophyll forests.",
+    "Size (cm)": "16",
+    "Colour": "Brown",
     "Region": "Cairns"
   },
   {
@@ -10839,11 +10835,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 127,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
-    "Region": "Albury"
+    "Description": "Usually having: 5 supraciliary scales; 24 midbody scale rows; 48 paravertebral scales; 10 plantar scales; 16 fourth finger subdigital lamellae; 19 fourth toe subdigital lamellae; strongly keeled subdigital lamellae; pale, acute plantar scales; usually 3+3 posttemporal scales.",
+    "Habitat": "Arboreal (Living in trees).",
+    "Size (cm)": "5.5",
+    "Colour": "Brown",    "Region": "Albury"
   },
   {
     "1968": 8,
@@ -10868,10 +10863,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 127,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Usually having: 5 supraciliary scales; 24 midbody scale rows; 48 paravertebral scales; 10 plantar scales; 16 fourth finger subdigital lamellae; 19 fourth toe subdigital lamellae; strongly keeled subdigital lamellae; pale, acute plantar scales; usually 3+3 posttemporal scales.",
+    "Habitat": "Arboreal (Living in trees).",
+    "Size (cm)": "5.5",
+    "Colour": "Brown",
     "Region": "Horsham"
   },
   {
@@ -10897,10 +10892,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 127,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Usually having: 5 supraciliary scales; 24 midbody scale rows; 48 paravertebral scales; 10 plantar scales; 16 fourth finger subdigital lamellae; 19 fourth toe subdigital lamellae; strongly keeled subdigital lamellae; pale, acute plantar scales; usually 3+3 posttemporal scales.",
+    "Habitat": "Arboreal (Living in trees).",
+    "Size (cm)": "5.5",
+    "Colour": "Brown",
     "Region": "Horsham"
   },
   {
@@ -10926,10 +10921,10 @@ var data = [
     "Year": 2019,
     "Rate": -50,
     "Rank": 127,
-    "Description": "",
-    "Habitat": "",
-    "Size (cm)": "",
-    "Colour": "",
+    "Description": "Usually having: 5 supraciliary scales; 24 midbody scale rows; 48 paravertebral scales; 10 plantar scales; 16 fourth finger subdigital lamellae; 19 fourth toe subdigital lamellae; strongly keeled subdigital lamellae; pale, acute plantar scales; usually 3+3 posttemporal scales.",
+    "Habitat": "Arboreal (Living in trees).",
+    "Size (cm)": "5.5",
+    "Colour": "Brown",
     "Region": "Chittering"
   },
   {

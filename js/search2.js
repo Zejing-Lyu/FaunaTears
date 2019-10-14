@@ -6,8 +6,9 @@ function Search() {
 @description: Displays the endangered species images while typing
 */
 
-    var category = decodeURIComponent(window.location.search);
-    category = category.substring(10);
+    var stateIndex = document.getElementById("states-selected").selectedIndex;
+
+    var category = findCategory(stateIndex);
 
     var flag = 0;
     var row = document.getElementById("species");
@@ -38,11 +39,12 @@ function Search() {
             document.getElementById("error").style.visibility = "visible";
         }
         else {
+
             document.getElementById("error").style.visibility = "hidden";
 
             // get the currently slected item index from all three filters
             var sortIndex = document.getElementById("sort-selected").selectedIndex;
-
+        
             if (sortIndex == 0) {
                 flag = sortLHSearch(newlist, flag, row, category, filter);
             }
