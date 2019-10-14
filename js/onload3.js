@@ -52,6 +52,7 @@ function myFunction() {
     
     if (category == "Australia") {
         for (var i = 0; i < newlist.length; i++) {
+            // Create cards for organisations for first oage navigation
             unique = populateSpecies(i, row, unique, newlist[i]);
             if (Object.keys(unique).length == 10) {
                 break;
@@ -61,8 +62,10 @@ function myFunction() {
     if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Northern Territory" || category == "Queensland" || category == "South Australia" || category == "Tasmania" || category == "Victoria" || category == "Western Australia") {
         for (var i = 0; i < newlist.length; i++) {
             if (newlist[i]["State - parsed"] == category) {
+                // Create cards for organisations for first oage navigation
                 unique = populateSpecies(i, row, unique, newlist[i]);
             }
+            // Break if limit for page has been reached
             if (Object.keys(unique).length == 10) {
                 break;
             }
@@ -72,8 +75,10 @@ function myFunction() {
         if (category == "Plant Trees" || category == "Rescue Fauna" || category == "Spread Awareness" || category == "Attend Conservation Workshops" || category == "Donate" || category == "Citizen Science") {
             for (var i = 0; i < newlist.length; i++) {
                 if (newlist[i]["Type"] == category) {
+                    // Create cards for organisations for first oage navigation
                     unique = populateSpecies(i, row, unique, newlist[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == 10) {
                     break;
                 }

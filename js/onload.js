@@ -24,7 +24,9 @@ function myFunction() {
     
     if (category == "Australia") {
         for (var i = 0; i < data.length; i++) {
+            // Create images for species for first page navigation 
             unique = populateSpecies(i, row, unique, data[i]);
+            // Break if limit for page has been reached
             if (Object.keys(unique).length == 15) {
                 break;
             }
@@ -33,8 +35,10 @@ function myFunction() {
     if (category == "Australian Capital Territory" || category == "New South Wales" || category == "Northern Territory" || category == "Queensland" || category == "South Australia" || category == "Tasmania" || category == "Victoria" || category == "Western Australia") {
         for (var i = 0; i < data.length; i++) {
             if (data[i]["State - parsed"] == category) {
+                // Create images for species for first page navigation 
                 unique = populateSpecies(i, row, unique, data[i]);
             }
+            // Break if limit for page has been reached
             if (Object.keys(unique).length == 15) {
                 break;
             }
@@ -44,8 +48,10 @@ function myFunction() {
         if (category == "Amphibia" || category == "Mammalia" || category == "Reptilia") {
             for (var i = 0; i < data.length; i++) {
                 if (data[i]["Class"] == category) {
+                    // Create images for species for first page navigation 
                     unique = populateSpecies(i, row, unique, data[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == 15) {
                     break;
                 }

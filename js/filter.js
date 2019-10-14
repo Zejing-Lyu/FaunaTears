@@ -1,4 +1,10 @@
 function findCategory(speciesIndex, stateIndex) {
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Set the heading title based on the class and state selected and return the category name
+*/
 
     var category = "";
 
@@ -195,10 +201,9 @@ function changeData() {
 @end_date: 13-09-2019
 @description: Opens the index.html page and passes the variable "value"
 */
-
-    //alert("test");
     var pages = document.getElementById("pages");
-    
+
+    // Empty the search field when the filters are changed
     emptySearch();
 
     // get the indices of the selected items from the three filters
@@ -206,19 +211,27 @@ function changeData() {
     var stateIndex = document.getElementById("states-selected").selectedIndex;
     var sortIndex = document.getElementById("sort-selected").selectedIndex;
 
+    // Get the category
     var category = findCategory(speciesIndex, stateIndex);
 
-    //alert("test");
+    // Update the page navigation
     pageNavigation(category);
+
+    // Update the images displayed
     updateData();
 
 }
 
 function updateData() {
-
-    //alert("test");
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Update the images based on the filters selected
+*/
     var pages = document.getElementById("pages");
-    
+
+    // Empty the search field when the filters are changed
     emptySearch();
 
     // get the indices of the selected items from the three filters
@@ -226,6 +239,7 @@ function updateData() {
     var stateIndex = document.getElementById("states-selected").selectedIndex;
     var sortIndex = document.getElementById("sort-selected").selectedIndex;
 
+    // Get the category 
     var category = findCategory(speciesIndex, stateIndex);
     var flag = 0;
     var row = document.getElementById("species");
@@ -255,6 +269,7 @@ function updateData() {
     var lowerLimit = 0;
     var upperLimit = 0;
 
+    // Get the number of pages for the page navigation
     if (pages.getAttribute("class") == "pagination") {
         for (var i = 1; i < pages.childElementCount - 1; i++) {
             if (pages.childNodes[i].getAttribute("class") == "page-item active") {
@@ -278,22 +293,23 @@ function updateData() {
         upperLimit = 15 * pageNo;
     }
 
+    // If sort is Rank (High - Low)
     if (sortIndex == 0) {
         flag = sortLH(newlist, flag, lowerLimit, upperLimit, row, category);
     }
-
+    // If sort is Rank (Low - High)
     if (sortIndex == 1) {
         flag = sortHL(newlist, flag, lowerLimit, upperLimit, row, category);
     }
-
+    // If sort is A-Z
     if (sortIndex == 2) {
         flag = sortLH(newlist2, flag, lowerLimit, upperLimit, row, category);
     }
-
+    // If sort is Z-A
     if (sortIndex == 3) {
         flag = sortHL(newlist2, flag, lowerLimit, upperLimit, row, category);
     }
-
+    // If no species are found for the selected filters
     if (flag == 0) {
         var p = document.createElement("p");
         p.innerHTML = "No results found.";
@@ -303,18 +319,26 @@ function updateData() {
 }
 
 function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Sort the data in acsending order of rank, or alphabetical order
+*/
     var unique = {};
     if (category == "Australia") {
 
         for (var i = 0; i < array.length; i++) {
             flag = 1;
-
+            // Create images for species based on page navigation selected
             if (Object.keys(unique).length >= lowerLimit) {
                 unique = populateSpecies(i, row, unique, array[i]);
             }
+            // Break if limit for page has been reached
             if (Object.keys(unique).length == upperLimit) {
                 break;
             }
+            // Create dummy data for previous pages
             if (Object.keys(unique).length < lowerLimit) {
                 unique = populateDummyData(i, row, unique, array[i]);
             }
@@ -325,12 +349,15 @@ function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
         for (var i = 0; i < array.length; i++) {
             if (array[i]["State - parsed"] == category) {
                 flag = 1;
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -342,13 +369,15 @@ function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
         for (var i = 0; i < array.length; i++) {
             if (array[i]["Class"] == category) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -361,13 +390,15 @@ function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
         for (var i = 0; i < array.length; i++) {
             if (array[i]["Class"] == "Amphibia" && array[i]["State - parsed"] == name) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -380,13 +411,15 @@ function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
         for (var i = 0; i < array.length; i++) {
             if (array[i]["Class"] == "Mammalia" && array[i]["State - parsed"] == name) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -399,13 +432,15 @@ function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
         for (var i = 0; i < array.length; i++) {
             if (array[i]["Class"] == "Reptilia" && array[i]["State - parsed"] == name) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                 unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -417,18 +452,26 @@ function sortLH(array, flag, lowerLimit, upperLimit, row, category) {
 }
 
 function sortHL(array, flag, lowerLimit, upperLimit, row,category) {
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Sort the images in desending order of rank or alphabetical order
+*/
     var unique = {};
     if (category == "Australia") {
 
         for (var i = array.length - 1; i >= 0; i--) {
             flag = 1;
-
+            // Create images for species based on page navigation selected
             if (Object.keys(unique).length >= lowerLimit) {
                 unique = populateSpecies(i, row, unique, array[i]);
             }
+            // Break if limit for page has been reached
             if (Object.keys(unique).length == upperLimit) {
                 break;
             }
+            // Create dummy data for previous pages
             if (Object.keys(unique).length < lowerLimit) {
                 unique = populateDummyData(i, row, unique, array[i]);
             }
@@ -439,13 +482,15 @@ function sortHL(array, flag, lowerLimit, upperLimit, row,category) {
         for (var i = array.length - 1; i >= 0; i--) {
             if (array[i]["State - parsed"] == category) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -457,13 +502,15 @@ function sortHL(array, flag, lowerLimit, upperLimit, row,category) {
         for (var i = array.length - 1; i >= 0; i--) {
             if (array[i]["Class"] == category) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -476,13 +523,15 @@ function sortHL(array, flag, lowerLimit, upperLimit, row,category) {
         for (var i = array.length - 1; i >= 0; i--) {
             if (array[i]["Class"] == "Amphibia" && array[i]["State - parsed"] == name) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -495,13 +544,15 @@ function sortHL(array, flag, lowerLimit, upperLimit, row,category) {
         for (var i = array.length - 1; i >= 0; i--) {
             if (array[i]["Class"] == "Mammalia" && array[i]["State - parsed"] == name) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                     unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }
@@ -514,13 +565,15 @@ function sortHL(array, flag, lowerLimit, upperLimit, row,category) {
         for (var i = array.length - 1; i >= 0; i--) {
             if (array[i]["Class"] == "Reptilia" && array[i]["State - parsed"] == name) {
                 flag = 1;
-
+                // Create images for species based on page navigation selected
                 if (Object.keys(unique).length >= lowerLimit) {
                 unique = populateSpecies(i, row, unique, array[i]);
                 }
+                // Break if limit for page has been reached
                 if (Object.keys(unique).length == upperLimit) {
                     break;
                 }
+                // Create dummy data for previous pages
                 if (Object.keys(unique).length < lowerLimit) {
                     unique = populateDummyData(i, row, unique, array[i]);
                 }

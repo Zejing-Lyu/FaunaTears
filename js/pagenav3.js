@@ -1,5 +1,10 @@
 function pageNavigation(category){
-
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Create page naviagtion
+*/
     var pages = document.getElementById("pages");
     while (pages.firstChild) {
         pages.removeChild(pages.firstChild);

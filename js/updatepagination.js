@@ -1,5 +1,10 @@
 function updatepagination(value){
-
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Update page navigation when selecting a page number
+*/
     var pages = document.getElementById("pages");
 
     if (value == 1) {
@@ -28,6 +33,12 @@ function updatepagination(value){
 }
 
 function previousPage() {
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Update page navigation when selecting previous button
+*/
     var pages = document.getElementById("pages");
     for (var i = 1; i < pages.childElementCount - 1; i++) {
         if (pages.childNodes[i].getAttribute("class") == "page-item active") {
@@ -45,10 +56,12 @@ function previousPage() {
         pages.childNodes[0].setAttribute("class", "page-item");
     }
 
+    // If the selected page is the first page, previous button should be disabled and next button should be active
     if (pages.childNodes[pages.childElementCount - 2].getAttribute("class") == "page-item active") {
         pages.childNodes[pages.childElementCount - 1].setAttribute("class", "page-item disabled");
     }
 
+    // If the selected page is the last page, previous button should be active and next button should be disabled
     if (pages.childNodes[pages.childElementCount - 2].getAttribute("class") == "page-item") {
         pages.childNodes[pages.childElementCount - 1].setAttribute("class", "page-item");
     }
@@ -57,6 +70,12 @@ function previousPage() {
 }
 
 function nextPage() {
+/*
+@author: Ishika Wikramanayake
+@start_date: 27-09-2019
+@end_date: 5-10-2019
+@description: Update page navigation when selecting next button
+*/
     var pages = document.getElementById("pages");
     var flag = 0;
     for (var i = 1; i < pages.childElementCount - 1; i++) {
@@ -78,10 +97,12 @@ function nextPage() {
         pages.childNodes[0].setAttribute("class", "page-item");
     }
 
+    // If the selected page is the first page, previous button should be disabled and next button should be active
     if (pages.childNodes[pages.childElementCount - 2].getAttribute("class") == "page-item active") {
         pages.childNodes[pages.childElementCount - 1].setAttribute("class", "page-item disabled");
     }
 
+    // If the selected page is the last page, previous button should be active and next button should be disabled
     if (pages.childNodes[pages.childElementCount - 2].getAttribute("class") == "page-item") {
         pages.childNodes[pages.childElementCount - 1].setAttribute("class", "page-item");
     }

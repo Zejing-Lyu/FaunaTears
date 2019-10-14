@@ -7,6 +7,8 @@
     <meta name="keywords" content="fauna tears, save, endangered id, html, threats, wild life, blue planet, blue planet - wildlife conservation, wildlife conservation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
     <title>Fauna Tears | id Information</title>
 
     <!-- Google Font -->
@@ -54,11 +56,17 @@
     <!-- Page Preloder End -->
     <!-- Header Section Begin -->
     <header class="header">
+
+        <!-- Logo -->
         <a class="logo" href="./home.html">
             <img src="logo.png" alt="">
         </a>
+
+        <!-- Menu Icon for Mobile -->
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <!-- Menu -->
         <ul class="menu">
             <li>
                 <a href="./home.html">Home</a>
@@ -73,10 +81,10 @@
                 <a href="./index2.html">Threats</a>
             </li>
             <li>
-                <a a href="#" onclick="AUS2('Australia');" class="active">Get Involved</a>
+                <a a href="#" onclick="AUS2('Australia');">Get Involved</a>
             </li>
             <li>
-                <a href="./about.html">About Us</a>
+                <a href="./about.html" class="active">About Us</a>
             </li>
         </ul>
     </header>
@@ -84,6 +92,7 @@
     <!-- Green Border Begin -->
     <section class="hero-section1 home-page set-bg" data-setbg="img/bg.jpg">
         <div class="container hero-text text-white">
+            <!-- Title -->
             <h2 id="title"></h2>
         </div>
     </section>
@@ -259,6 +268,7 @@
             <div class="row">
                 <!-- 1st Column Begin -->
                 <div class="col-lg-12 text-center">
+                    <!-- Logo -->
                     <a href="./home.html">
                         <img src="logo2.png" alt="">
                     </a>
@@ -298,7 +308,7 @@
                             <a href="./index2.html">Threats</a>
                         </li>
                         <li>
-                            <a href="./map.html">Explore Map</a>
+                            <a href="#" onclick="AUS2('Australia');">Get Involved</a>
                         </li>
                     </ul>
                 </div>
@@ -430,6 +440,8 @@
                     })
                 }
 
+
+            // Set view to map
             map.setView(new L.LatLng(avg_lat, avg_lon), 10);
 
 

@@ -43,7 +43,7 @@
 }
 
 
-.top {
+.arrowdown {
     margin-top: 600px;
     position: absolute;
     width: 100%;
@@ -1335,6 +1335,16 @@ html .ui-button.ui-state-disabled:active {
 /*---------------------
   Counter
 -----------------------*/
+
+#info11 {
+    color: #3366BB;
+    text-decoration: underline;
+}
+
+    #info11:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
 
 .b-top {
     padding-top: 94px;
